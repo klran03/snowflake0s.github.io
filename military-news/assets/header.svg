@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1245 150" role="img" aria-label="ころりタイムズ Military & Security News">
+  <defs>
+    <linearGradient id="sunset" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6f6b66"/>
+      <stop offset="0.28" stop-color="#d7a158"/>
+      <stop offset="0.5" stop-color="#f2d69a"/>
+      <stop offset="0.64" stop-color="#b86e35"/>
+      <stop offset="1" stop-color="#533a32"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9b478" stop-opacity=".95"/>
+      <stop offset=".65" stop-color="#e8c489" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#34302d" stop-opacity=".1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1245" height="150" fill="url(#sunset)"/>
+  <rect width="650" height="150" fill="url(#sky)"/>
+  <circle cx="335" cy="70" r="42" fill="#fff1c4" opacity=".72"/>
+  <path d="M0 129 C150 122 265 126 430 121 C535 118 594 120 660 124 L660 150 L0 150 Z" fill="#17181a" opacity=".75"/>
+  <g fill="#0b1117">
+    <path d="M80 99 L178 89 L232 76 L312 77 L356 67 L469 72 L526 78 L505 83 L389 85 L344 97 L229 100 L139 105 Z"/>
+    <path d="M282 77 L304 27 L321 29 L326 75 Z"/>
+    <path d="M350 72 L384 21 L401 24 L397 74 Z"/>
+    <path d="M217 91 L305 49 L333 52 L288 89 Z"/>
+    <path d="M356 88 L438 55 L468 60 L403 91 Z"/>
+    <path d="M150 90 L118 78 L90 80 L121 95 Z"/>
+  </g>
+  <polygon points="700,0 1245,0 1245,150 570,150" fill="#0a3f70"/>
+  <polygon points="742,0 1245,0 1245,150 612,150" fill="#07365f" opacity=".55"/>
+  <text x="925" y="65" text-anchor="middle" fill="#ffffff" font-size="22" font-family="Yu Mincho, Hiragino Mincho ProN, serif">前日を中心に、世界の軍事・安全保障</text>
+  <text x="925" y="98" text-anchor="middle" fill="#ffffff" font-size="22" font-family="Yu Mincho, Hiragino Mincho ProN, serif">ニュースをわかりやすくお届けします。</text>
+</svg>
