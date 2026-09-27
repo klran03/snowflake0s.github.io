@@ -1,7 +1,20 @@
 {
   "schema_version": 1,
-  "revision": 0,
-  "last_attempt": null,
+  "revision": 1,
+  "last_attempt": {
+    "run_id": "manual-20260927-evening-special-01",
+    "trigger": "manual",
+    "issue_date": "2026-09-27",
+    "edition": "evening",
+    "label": "夕刊・臨時便",
+    "target_slot": "2026-09-27T17:00:00+09:00",
+    "candidate_count": 5,
+    "new_count": 5,
+    "result": "OK",
+    "failed_stage": null,
+    "started_at": "2026-09-27T17:57:12+09:00",
+    "finished_at": "2026-09-27T17:59:13+09:00"
+  },
   "latest_verified": {
     "issue_date": "2026-09-27",
     "edition": "morning",
@@ -13,6 +26,47 @@
     "pages_workflow_conclusion": "success",
     "public_http_verified": false
   },
-  "published_candidates": [],
-  "history": []
+  "published_candidates": [
+    {
+      "id": "2026-09-27-china-scarborough-joint-exercise",
+      "issue_date": "2026-09-27",
+      "article_path": "military-news/articles/2026-09-27/china-scarborough-joint-exercise.html"
+    },
+    {
+      "id": "2026-09-27-singapore-us-sspd",
+      "issue_date": "2026-09-27",
+      "article_path": "military-news/articles/2026-09-27/singapore-us-strategic-security-policy-dialogue.html"
+    },
+    {
+      "id": "2026-09-27-ukraine-jet-shahed-interception",
+      "issue_date": "2026-09-27",
+      "article_path": "military-news/articles/2026-09-27/ukraine-jet-shahed-interception.html"
+    },
+    {
+      "id": "2026-09-26-saudi-houthi-intercepts",
+      "issue_date": "2026-09-27",
+      "article_path": "military-news/articles/2026-09-27/saudi-houthi-missile-drone-intercepts.html"
+    },
+    {
+      "id": "2026-09-26-dutch-aswf-delay",
+      "issue_date": "2026-09-27",
+      "article_path": "military-news/articles/2026-09-27/dutch-belgian-aswf-frigate-delay.html"
+    }
+  ],
+  "history": [
+    {
+      "run_id": "manual-20260927-evening-special-01",
+      "trigger": "manual",
+      "issue_date": "2026-09-27",
+      "edition": "evening",
+      "label": "夕刊・臨時便",
+      "target_slot": "2026-09-27T17:00:00+09:00",
+      "candidate_count": 5,
+      "new_count": 5,
+      "result": "OK",
+      "failed_stage": null,
+      "started_at": "2026-09-27T17:57:12+09:00",
+      "finished_at": "2026-09-27T17:59:13+09:00"
+    }
+  ]
 }
