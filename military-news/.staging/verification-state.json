@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-27T18:11:08+09:00",
+  "run_id": "scheduled-20260927-1810-verification-01",
+  "trigger": "scheduled",
+  "expected_slot": {
+    "issue_date": "2026-09-27",
+    "edition": "evening",
+    "target_time": "2026-09-27T17:00:00+09:00"
+  },
+  "observed_slot": {
+    "issue_date": "2026-09-27",
+    "edition": "evening",
+    "label": "夕刊・臨時便",
+    "article_count": 12,
+    "new_count": 5,
+    "archive_exists": true,
+    "article_links_checked": 12,
+    "article_links_ok": 12
+  },
+  "git_sha": "58dec9c764487ef0678f8a9f22b07d8c23ef6f83",
+  "collector_status": {
+    "status": "OK_FRESH",
+    "last_run_id": "manual-20260927-collector-test-01",
+    "last_run_trigger": "manual",
+    "last_run_status": "OK",
+    "last_successful_collection_at": "2026-09-27T17:24:09.933+09:00",
+    "candidate_count": 6
+  },
+  "pages_status": {
+    "status": "SUCCESS",
+    "workflow_run_id": 36307988885,
+    "head_sha": "58dec9c764487ef0678f8a9f22b07d8c23ef6f83",
+    "conclusion": "success"
+  },
+  "public_http_status": {
+    "status": "PUBLIC_HTTP_UNVERIFIED",
+    "detail": "公開URLの取得を試みたが、この実行環境のWeb取得ツールではURLへアクセスできなかった。GitHub Pages停止とは判定しない。"
+  },
+  "recovery_result": "NOT_NEEDED",
+  "error": null
+}
