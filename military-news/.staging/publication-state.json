@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "revision": 0,
+  "last_attempt": null,
+  "latest_verified": {
+    "issue_date": "2026-09-27",
+    "edition": "morning",
+    "trigger": "manual",
+    "commit_sha": "490640d4a94a6001f34bfa6f2405b3cb83b012e1",
+    "article_count": 7,
+    "git_readback_verified": true,
+    "pages_workflow_id": 36302822548,
+    "pages_workflow_conclusion": "success",
+    "public_http_verified": false
+  },
+  "published_candidates": [],
+  "history": []
+}
