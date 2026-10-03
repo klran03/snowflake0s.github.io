@@ -1,23 +1,25 @@
 {
   "schema_version": 1,
-  "revision": 2,
+  "revision": 3,
   "initialized_at": "2026-09-27T17:12:19+09:00",
-  "updated_at": "2026-10-03T16:09:27+09:00",
+  "updated_at": "2026-10-03T17:06:45+09:00",
   "last_run": {
-    "run_id": "manual-20261003-special-collector-01",
-    "trigger": "manual",
+    "run_id": "scheduled-20261003-1700-collector-01",
+    "trigger": "scheduled",
     "status": "OK",
-    "started_at": "2026-10-03T15:58:24+09:00",
-    "finished_at": "2026-10-03T16:09:27+09:00",
-    "base_commit_sha": "f9445096b50686aa53d74bddc2ee2935269373ec",
-    "query_count": 35,
-    "added_count": 6,
-    "error": null
+    "target_slot": "2026-10-03T17:00:00+09:00",
+    "started_at": "2026-10-03T16:57:58+09:00",
+    "finished_at": "2026-10-03T17:06:45+09:00",
+    "base_commit_sha": "eb4c0896010d9cee9eb0bac115460f38a85665fa",
+    "query_count": 34,
+    "added_count": 3,
+    "error": null,
+    "notes": "定期起動を受けて収集。前回臨時更新に未掲載の当日ニュースを追加。既掲載6件の重複追加はなし。"
   },
-  "last_successful_collection_at": "2026-10-03T16:09:27+09:00",
+  "last_successful_collection_at": "2026-10-03T17:06:45+09:00",
   "coverage": {
-    "from_jst": "2026-10-02T00:00:00+09:00",
-    "through_jst": "2026-10-03T16:09:27+09:00",
+    "from_jst": "2026-10-02T05:00:00+09:00",
+    "through_jst": "2026-10-03T17:06:45+09:00",
     "completed": true
   },
   "candidates": [
@@ -454,6 +456,144 @@
       "candidate_slug": "rheinmetall-argotec-satellite-2026-10-03",
       "first_seen_at_jst": "2026-10-03T16:09:27+09:00",
       "last_checked_at_jst": "2026-10-03T16:09:27+09:00"
+    },
+    {
+      "slug": "north-korea-missile-launch-2026-10-03",
+      "id": "2026-10-03-north-korea-missile-launch",
+      "topic_key": "north-korea-missile-launch-2026-10-03",
+      "candidate_slug": "north-korea-missile-launch-2026-10-03",
+      "headline": "北朝鮮が弾道ミサイル発射、約680キロ飛行し日本のEEZ外へ",
+      "category": "戦争・紛争",
+      "published_date": "2026-10-03",
+      "published_at_jst": "2026-10-03T08:15:00+09:00",
+      "first_seen_at_jst": "2026-10-03T16:59:13+09:00",
+      "last_checked_at_jst": "2026-10-03T17:06:10+09:00",
+      "lead": "北朝鮮が3日朝に少なくとも1発を発射。日本政府はEEZ外への落下を推定し、日米韓で分析を進めている。",
+      "body_paragraphs": [
+        "防衛省と内閣官房は10月3日、北朝鮮が同日午前6時36分ごろ、東岸付近から北東方向へ少なくとも1発の弾道ミサイルを発射したと発表した。最高高度は約90キロ、飛距離は約680キロで、日本海の日本の排他的経済水域（EEZ）外に落下したと推定している。",
+        "日本政府は、午前8時15分の続報時点で航空機や船舶への被害情報を確認していないとした。日米韓が詳細の分析を進める一方、日本は北朝鮮に厳重に抗議。防衛省は情報収集と警戒監視を継続するとしている。"
+      ],
+      "summary": "北朝鮮が3日朝に弾道ミサイルを発射。日本政府は約680キロ飛行し、EEZ外に落下したと推定している。",
+      "sources": [
+        {
+          "name": "防衛省・内閣官房「北朝鮮のミサイル等関連情報」続報",
+          "url": "https://www.mod.go.jp/j/press/news/2026/10/03d.html",
+          "published_at_jst": "2026-10-03T08:15:00+09:00",
+          "checked_at_jst": "2026-10-03T17:05:15+09:00"
+        },
+        {
+          "name": "防衛省「北朝鮮のミサイル等関連情報」発表時刻一覧",
+          "url": "https://www.mod.go.jp/j/surround/northKorea/index.html",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-03T17:05:15+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "飛距離・高度・落下地点は日本政府の推定です。発表は10月3日08:15。夕刊での初掲載であり、夕方の新たな発射を伝えるものではありません。",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/North_Korea%27s_ballistic_missile_-_North_Korea_Victory_Day-2013_02.jpg/1280px-North_Korea%27s_ballistic_missile_-_North_Korea_Victory_Day-2013_02.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:North_Korea%27s_ballistic_missile_-_North_Korea_Victory_Day-2013_02.jpg",
+        "alt": "北朝鮮の軍事パレードに登場した弾道ミサイル。2013年撮影の資料写真で、今回発射された機体ではない。",
+        "credit": "Stefan Krasowski / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-03T17:06:10+09:00",
+        "reuse_conditions": "作者名・出典・CC BY 2.0へのリンクを表示。画像に変更を加えない場合は変更なしと記載。トリミングする場合はトリミングと表示し、元写真と区別する。撮影者の推奨・支持を示唆しない。",
+        "modifications": "none; any display crop must be separately disclosed",
+        "visual_verification": "downloaded HTTP 200 and visually inspected; correct reference photograph, no AI generation",
+        "local_path": "/workspace/scratch/f946cbaef8d7/korori-evening/photos/north-korea-reference.jpg",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。"
+      }
+    },
+    {
+      "slug": "paparo-india-visit-2026-10-03",
+      "id": "2026-10-03-paparo-india-visit",
+      "topic_key": "paparo-india-visit-2026-10-03",
+      "candidate_slug": "paparo-india-visit-2026-10-03",
+      "headline": "パパロ米軍司令官がインド訪問と報道、先端技術と地域安全保障を協議へ",
+      "category": "その他",
+      "published_date": "2026-10-03",
+      "published_at_jst": "2026-10-03T15:05:00+09:00",
+      "first_seen_at_jst": "2026-10-03T16:59:39+09:00",
+      "last_checked_at_jst": "2026-10-03T17:06:10+09:00",
+      "lead": "タイムズ・オブ・インディアによると、パパロ司令官は3日から8日までインドを訪問。防衛協力や新興技術が議題となる。",
+      "body_paragraphs": [
+        "インド紙タイムズ・オブ・インディアは10月3日、米軍のインド太平洋地域を担当するサミュエル・パパロ司令官が、同日から8日までのインド訪問を開始したと報じた。同紙によると今年2回目の訪問で、在インド米大使館は米印の防衛パートナーシップと軍同士の協力を深めることが目的だと説明している。",
+        "報道によると、協議の議題にはデジタル化、新興技術、地域の戦略的安定、防衛分野のエネルギー供給の強靱性が含まれる。記事は訪問日程と協議テーマを伝えており、新たな装備契約や具体的合意の成立は示していない。"
+      ],
+      "summary": "パパロ司令官の3～8日のインド訪問を現地紙が報道。米印防衛協力や先端技術、地域の安定について協議する予定。",
+      "sources": [
+        {
+          "name": "Times of India: Pacific to pacify ties? Washington sends US admiral to India as relations face strain",
+          "url": "https://timesofindia.indiatimes.com/india/pacific-to-pacify-ties-washington-sends-us-admiral-to-india-as-relations-face-strain/articleshow/134652349.cms",
+          "published_at_jst": "2026-10-03T15:05:00+09:00",
+          "checked_at_jst": "2026-10-03T17:05:15+09:00"
+        }
+      ],
+      "confidence": "medium",
+      "verification_notes": "訪問開始と協議内容はTimes of Indiaの報道に基づきます。15:05 JSTは同紙の更新時刻。大使館の発表内容は同紙を通じた確認で、一次発表本文は未確認です。合意や契約の成立を示す報道ではありません。",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/ADM_Samuel_J._Paparo_Jr._%282%29.jpg/960px-ADM_Samuel_J._Paparo_Jr._%282%29.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:ADM_Samuel_J._Paparo_Jr._(2).jpg",
+        "alt": "サミュエル・パパロ司令官。2024年5月1日撮影の公式肖像、資料写真。今回のインド訪問時の写真ではない。",
+        "credit": "U.S. Navy / Mass Communication Specialist 1st Class John Bellino",
+        "license": "Public domain (U.S. federal government work)",
+        "license_url": "https://commons.wikimedia.org/wiki/File:ADM_Samuel_J._Paparo_Jr._(2).jpg#Licensing",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-03T17:06:10+09:00",
+        "reuse_conditions": "米軍職員が公務で作成した作品として米国でパブリックドメイン。撮影者・米海軍をクレジットし、米軍による本媒体の推奨・支持を示唆しない。公式肖像と資料写真を明示。変更しない場合は変更なし、表示を切り抜く場合はトリミングと記載する。",
+        "modifications": "none; any display crop must be separately disclosed",
+        "visual_verification": "downloaded HTTP 200 and visually inspected; correct reference photograph, no AI generation",
+        "local_path": "/workspace/scratch/f946cbaef8d7/korori-evening/photos/paparo-reference.jpg",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。",
+        "notice": "The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement."
+      }
+    },
+    {
+      "id": "2026-10-03-ukraine-night-drone-attack",
+      "topic_key": "ukraine-night-drone-attack-20261003",
+      "candidate_slug": "ukraine-night-drone-attack-20261003",
+      "headline": "ウクライナ空軍、夜間に無人機157機の攻撃と発表　131機を撃墜・無力化",
+      "category": "戦争・紛争",
+      "published_date": "2026-10-03",
+      "published_at_jst": null,
+      "first_seen_at_jst": "2026-10-03T16:59:25+09:00",
+      "last_checked_at_jst": "2026-10-03T17:01:17+09:00",
+      "lead": "ウクライナ空軍は3日朝、前夜からロシアの無人機157機による攻撃を受け、131機を撃墜または無力化したと発表した。数字は同国側の暫定集計。",
+      "body_paragraphs": [
+        "ウクライナの通信社UNNと公共放送ススピーリネは10月3日、空軍の発表を基に、ロシアが前夜からシャヘド型など計157機の無人機を投入したと伝えた。空軍は現地時間3日午前9時時点で131機を撃墜または無力化したとしており、この数には電子戦などによる対処も含まれる。",
+        "同発表では12カ所への着弾と、撃墜された機体の破片の5カ所への落下を報告した。朝には南部オデーサ州で別の徘徊型兵器による攻撃もあったとし、被害を確認中としている。発表時点では攻撃が続いていた。攻撃数、迎撃結果、着弾地点数はいずれもウクライナ側の説明で、今回の収集では独立した検証はできていない。"
+      ],
+      "summary": "ウクライナ空軍が夜間の無人機攻撃を報告。157機中131機に対処したとするが、被害や集計は暫定。",
+      "sources": [
+        {
+          "name": "UNN：Russia attacked Ukraine with 157 drones",
+          "url": "https://unn.ua/en/news/russia-attacked-ukraine-with-157-drones-how-many-were-destroyed-and-what-is-known-about-the-strikes",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-03T17:00:34+09:00"
+        },
+        {
+          "name": "ススピーリネ（ウクライナ公共放送）：10月3日夜間の無人機攻撃",
+          "url": "https://suspilne.media/1418329-sili-ppo-zbili-131-udarnij-dron-v-nic-na-3-zovtna/",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-03T17:01:17+09:00"
+        }
+      ],
+      "confidence": "medium",
+      "verification_notes": "攻撃数と迎撃結果はウクライナ空軍の暫定発表です。UNNと公共放送が同じ発表を報じており、戦果の独立検証ではありません。公開時刻のタイムゾーンが確認できないため日付のみを記載しています。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Sacred_Defence_Week_parade%2C_2023%2C_in_Tehran_%28113%29.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sacred_Defence_Week_parade,_2023,_in_Tehran_(113).jpg",
+        "alt": "イランの軍事パレードで車両に搭載されたシャヘド136。2023年の資料写真で、今回の攻撃の機体ではない。",
+        "caption": "イランの軍事パレードに登場したシャヘド136（2023年、資料写真）。今回の攻撃を写したものではありません。",
+        "credit": "Amin Ahouei / Tasnim News Agency, via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Commons掲載版はトリミング・透かし除去済み。当サイトでは画像データ未加工、一覧では表示領域に合わせて切り抜き表示。",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-03T17:01:35+09:00"
+      }
     }
   ],
   "history": [
@@ -478,6 +618,19 @@
       "query_count": 35,
       "added_count": 6,
       "error": null
+    },
+    {
+      "run_id": "scheduled-20261003-1700-collector-01",
+      "trigger": "scheduled",
+      "status": "OK",
+      "target_slot": "2026-10-03T17:00:00+09:00",
+      "started_at": "2026-10-03T16:57:58+09:00",
+      "finished_at": "2026-10-03T17:06:45+09:00",
+      "base_commit_sha": "eb4c0896010d9cee9eb0bac115460f38a85665fa",
+      "query_count": 34,
+      "added_count": 3,
+      "error": null,
+      "notes": "定期起動を受けて収集。前回臨時更新に未掲載の当日ニュースを追加。既掲載6件の重複追加はなし。"
     }
   ]
 }
