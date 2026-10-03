@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "revision": 1,
+  "revision": 2,
   "initialized_at": "2026-09-27T17:12:19+09:00",
-  "updated_at": "2026-09-27T17:24:09.933+09:00",
+  "updated_at": "2026-10-03T16:09:27+09:00",
   "last_run": {
-    "run_id": "manual-20260927-collector-test-01",
+    "run_id": "manual-20261003-special-collector-01",
     "trigger": "manual",
     "status": "OK",
-    "started_at": "2026-09-27T17:21:00+09:00",
-    "finished_at": "2026-09-27T17:24:09.933+09:00",
-    "base_commit_sha": "400d485b54e46c333846e11ac2e7f6ee016190c0",
-    "query_count": 42,
+    "started_at": "2026-10-03T15:58:24+09:00",
+    "finished_at": "2026-10-03T16:09:27+09:00",
+    "base_commit_sha": "f9445096b50686aa53d74bddc2ee2935269373ec",
+    "query_count": 35,
     "added_count": 6,
     "error": null
   },
-  "last_successful_collection_at": "2026-09-27T17:24:09.933+09:00",
+  "last_successful_collection_at": "2026-10-03T16:09:27+09:00",
   "coverage": {
-    "from_jst": "2026-09-26T17:00:00+09:00",
-    "through_jst": "2026-09-27T17:24:09.933+09:00",
+    "from_jst": "2026-10-02T00:00:00+09:00",
+    "through_jst": "2026-10-03T16:09:27+09:00",
     "completed": true
   },
   "candidates": [
@@ -218,6 +218,242 @@
       "confidence": "high",
       "verification_notes": "TKMS一次発表とNaval Newsで照合。MoUは共同開発の検討段階であり、調達契約や完成システムの発表ではない。画像は次工程で権利確認する。",
       "image": null
+    },
+    {
+      "slug": "saudi-houthi-red-sea-preparations-2026-10-03",
+      "headline": "サウジ、対フーシ派攻勢を準備と報道　紅海航路の安全が焦点",
+      "category": "戦争・紛争",
+      "published_date": "2026-10-02",
+      "published_at_jst": "2026-10-03T01:03:00+09:00",
+      "lead": "ロイターが関係当局者の話として報道。作戦の実施や開始時期は確認されていない。",
+      "body_paragraphs": [
+        "ロイターは10月2日、サウジアラビアがイエメンの親イラン武装組織フーシ派に対する攻勢を準備していると報じた。準備を知る地域・欧米の当局者ら6人に取材したもので、紅海を通る海上交通の確保が重要な目的とされる。",
+        "記事が伝えているのは検討中の計画で、実施済みの作戦ではない。取材に応じた関係者の間でも開始時期の見通しには幅があり、サウジ・イエメン両政府、フーシ派、米軍は記事掲載時点でコメント要請に回答していなかった。具体的な実施決定については、今後の公式発表を確認する必要がある。"
+      ],
+      "summary": "サウジによる対フーシ派攻勢の準備をロイターが報道。実施と開始時期は未確認。",
+      "sources": [
+        {
+          "name": "Reuters（MarketScreener転載）: Saudis plan assault on Houthis to break Red Sea chokehold",
+          "url": "https://www.marketscreener.com/news/saudis-plan-assault-on-houthis-to-break-red-sea-chokehold-ce785ddbd98cf427",
+          "published_at_jst": "2026-10-03T01:03:00+09:00",
+          "checked_at_jst": "2026-10-03T16:00:00+09:00"
+        }
+      ],
+      "confidence": "medium",
+      "verification_notes": "匿名当局者の証言に基づくロイター報道です。攻勢の実施決定や開始時期は確認されていません。記事更新は10月3日2時21分（日本時間）。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Bab-el-Mandeb_Seen_From_Midchannel_%28cropped%29.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bab-el-Mandeb_Seen_From_Midchannel_(cropped).jpg",
+        "alt": "バブ・エル・マンデブ海峡から望む海岸。資料写真",
+        "credit": "Richard Weil / Wikimedia Commons（Abo Yemenによるトリミング）",
+        "license": "CC0 1.0",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-03T16:01:00+09:00"
+      },
+      "id": "2026-10-03-saudi-houthi-red-sea-preparations-2026-10-03",
+      "topic_key": "saudi-houthi-red-sea-preparations-2026-10-03",
+      "candidate_slug": "saudi-houthi-red-sea-preparations-2026-10-03",
+      "first_seen_at_jst": "2026-10-03T16:09:27+09:00",
+      "last_checked_at_jst": "2026-10-03T16:09:27+09:00"
+    },
+    {
+      "slug": "taiwan-pla-activity-20261003",
+      "headline": "台湾国防部、中国軍機延べ5機と艦艇6隻の周辺活動を発表",
+      "category": "空軍",
+      "published_date": "2026-10-03",
+      "published_at_jst": null,
+      "lead": "台湾国防部は10月3日、前日朝からの24時間に中国軍機延べ5機、軍艦6隻、公船7隻を台湾周辺で確認したと発表した。",
+      "body_paragraphs": [
+        "台湾国防部の3日付発表によると、観測対象は台湾時間10月2日午前6時から3日午前6時まで。日本時間では2日午前7時から3日午前7時に当たる。確認した中国軍機は延べ5機で、うち延べ2機が台湾南西・東部の空域に入ったとしている。",
+        "同部は中国軍艦6隻と公船7隻の活動も報告した。台湾側は任務に就く航空機、艦艇、地上配備のミサイルシステムで監視・対応したという。数字は台湾当局の発表に基づくもので、今回の公表文だけから領空侵入や戦闘の発生を意味するものではない。"
+      ],
+      "summary": "台湾当局が3日朝までの24時間の中国軍活動を公表。軍機は延べ5機、軍艦6隻、公船7隻。",
+      "sources": [
+        {
+          "name": "台湾国防部「中共解放軍臺海周邊海、空域動態」",
+          "url": "https://www.mnd.gov.tw/news/plaact/87902",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-03T16:00:27+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "台湾国防部の発表に基づく数字で、活動自体の独立検証ではありません。空域への進入と領空侵犯は異なります。観測対象は台湾時間10月2日6時〜3日6時。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Five_F-16s_of_401st_Tactical_Composite_Wing_Flypast_Hualien_Air_Force_Base_20160813b.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Five_F-16s_of_401st_Tactical_Composite_Wing_Flypast_Hualien_Air_Force_Base_20160813b.jpg",
+        "alt": "花蓮基地上空を編隊飛行する台湾空軍のF-16。2016年8月13日撮影の資料写真で、今回の活動を写したものではない。",
+        "credit": "玄史生／Wikimedia Commons（2016年8月13日、資料写真）",
+        "license": "CC0 1.0",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-03T16:01:18+09:00"
+      },
+      "id": "2026-10-03-taiwan-pla-activity-20261003",
+      "topic_key": "taiwan-pla-activity-20261003",
+      "candidate_slug": "taiwan-pla-activity-20261003",
+      "first_seen_at_jst": "2026-10-03T16:09:27+09:00",
+      "last_checked_at_jst": "2026-10-03T16:09:27+09:00"
+    },
+    {
+      "slug": "seaguardian-softbank-disaster-connectivity-20261002",
+      "headline": "海保のMQ-9Bで災害時通信を実証、ソフトバンクが地上5キロ超の圏域を確認",
+      "category": "新技術・兵器開発",
+      "published_date": "2026-10-02",
+      "published_at_jst": null,
+      "lead": "ソフトバンクは10月2日、海上保安庁の大型無人航空機MQ-9Bシーガーディアンに通信装置を搭載し、上空から地上へ携帯通信を届ける実証に成功したと発表した。",
+      "body_paragraphs": [
+        "同社によると、実証では高知県黒潮町沖の高度3,000メートルを飛ぶ機体から電波を送り、直径5キロメートルを超える地上の通信圏域を形成した。海上保安庁が保有する機体を使い、総務省との省庁間連携や機体メーカーの協力を得て実施した。",
+        "日本で製造した通信ポッドには、機体の姿勢変化に合わせてアンテナの向きを調整する仕組みを搭載。屋外の検証では下り最大20Mbps、上り最大5Mbpsを確認したという。災害で地上の通信設備が被害を受けた際の応急復旧を目指す技術で、現時点の発表は実証成果であり、運用開始を告知したものではない。"
+      ],
+      "summary": "海保の無人機を空中の通信中継点に利用。ソフトバンクは高度3,000メートルから直径5キロ超の通信圏域形成を報告した。",
+      "sources": [
+        {
+          "name": "SoftBank Corp.：大型無人航空機による災害時通信実証（英語公式発表）",
+          "url": "https://www.softbank.jp/en/corp/news/press/sbkk/2026/20261002_02/",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-03T15:59:14+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "性能値はソフトバンクの実証発表に基づきます。実証の実施日は発表本文に明記されていません。実用サービスの開始を示す発表ではありません。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/210421-N-FC670-106.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:210421-N-FC670-106.jpg",
+        "alt": "米海軍艦艇コロナド上空を飛行するMQ-9シーガーディアン。2021年の資料写真で、海上保安庁の今回の実証機ではない。",
+        "credit": "U.S. Navy／MCC Shannon Renfroe（2021年4月21日、資料写真）",
+        "license": "U.S. Government public domain",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-03T16:01:18+09:00",
+        "notice": "The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement."
+      },
+      "id": "2026-10-03-seaguardian-softbank-disaster-connectivity-20261002",
+      "topic_key": "seaguardian-softbank-disaster-connectivity-20261002",
+      "candidate_slug": "seaguardian-softbank-disaster-connectivity-20261002",
+      "first_seen_at_jst": "2026-10-03T16:09:27+09:00",
+      "last_checked_at_jst": "2026-10-03T16:09:27+09:00"
+    },
+    {
+      "slug": "us-navy-sm6-multiyear-contract-2026-10-03",
+      "headline": "米海軍向けSM-6、最大244億ドルの複数年契約　生産能力を拡大",
+      "category": "新技術・兵器開発",
+      "published_date": "2026-10-02",
+      "published_at_jst": null,
+      "lead": "RTXは5年間に2年分の追加オプションを付けた契約を発表。長期発注で供給の安定化を図る。",
+      "body_paragraphs": [
+        "RTX傘下のレイセオンは10月1日、米海軍向けの標準ミサイル6（SM-6）について、最大244億ドルの契約を受注したと発表した。契約は5年間で、さらに2年間の追加オプションを含む。10月2日にはUSNI Newsなどが契約内容と生産拡大の狙いを報じた。",
+        "同社は長期的な発注の見通しを得ることで、人員の確保、設備投資、製造の自動化を進め、供給を増やす方針だ。SM-6は防空、対艦、弾道ミサイル防衛など複数の任務に用いられる。244億ドルは契約の上限額であり、発表に調達数量の明記はないため、確定的な発注総額や納入数として扱うべきではない。"
+      ],
+      "summary": "米海軍向けSM-6の供給拡大へ、レイセオンが最大244億ドルの複数年契約を受注。",
+      "sources": [
+        {
+          "name": "USNI News: Navy Contracts RTX for $24.4B Standard Missile-6 Deal",
+          "url": "https://news.usni.org/2026/10/02/navy-contracts-rtx-for-24-4b-standard-missile-6-deal",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-03T16:00:00+09:00"
+        },
+        {
+          "name": "RTX: RTX's Raytheon awarded $24.4 billion multi-year contract for SM-6 interceptors",
+          "url": "https://www.rtx.com/news/news-center/2026/10/01/rtxs-raytheon-awarded-24-4-billion-multi-year-contract-for-sm-6-interceptors",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-03T16:02:00+09:00"
+        },
+        {
+          "name": "Breaking Defense: Navy, Raytheon ink $24.4B deal for SM-6 ‘acceleration’",
+          "url": "https://breakingdefense.com/2026/10/navy-raytheon-ink-24-4b-deal-for-sm-6-acceleration/",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-03T16:00:00+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "RTXの公式発表は10月1日、専門媒体の報道は10月2日。244億ドルは契約上限額で、調達数量の公式発表は確認できません。",
+      "image": {
+        "url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2310/8087683/1000w_q95.jpg",
+        "source_url": "https://www.dvidshub.net/image/8087683/uss-savannah-conducts-live-fire-demonstration",
+        "alt": "沿海域戦闘艦サバンナがSM-6を発射する。2023年10月24日の資料写真",
+        "credit": "U.S. Navy / Commander, Naval Surface Force, U.S. Pacific Fleet via DVIDS",
+        "license": "U.S. Government public domain",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-03T16:01:00+09:00",
+        "notice": "The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement."
+      },
+      "id": "2026-10-03-us-navy-sm6-multiyear-contract-2026-10-03",
+      "topic_key": "us-navy-sm6-multiyear-contract-2026-10-03",
+      "candidate_slug": "us-navy-sm6-multiyear-contract-2026-10-03",
+      "first_seen_at_jst": "2026-10-03T16:09:27+09:00",
+      "last_checked_at_jst": "2026-10-03T16:09:27+09:00"
+    },
+    {
+      "slug": "royal-navy-bersama-lima-26-20261002",
+      "headline": "英哨戒艦スペイとテイマー、南シナ海の5カ国共同演習へ",
+      "category": "海軍",
+      "published_date": "2026-10-02",
+      "published_at_jst": null,
+      "lead": "英海軍は10月2日、哨戒艦スペイとテイマーが、オーストラリア、マレーシア、ニュージーランド、シンガポールとの共同演習「ベルサマ・リマ26」に参加すると発表した。",
+      "body_paragraphs": [
+        "英海軍によると、5カ国防衛取極（FPDA）に基づく演習は月曜日から始まり、南シナ海で10日間の訓練を行う予定。スペイとテイマーはそれぞれ約60人の乗員を擁し、陸海空の部隊と連携する。",
+        "訓練には艦艇への立ち入り・捜索、対潜水艦戦、艦砲射撃の誘導、航空部隊と連携した防空などを盛り込む。豪空軍のF-35Aも参加予定で、実動段階に先立って各国が装備や運用手順を確認する。スペイにとっては、夏にシンガポールで受けた整備後の任務復帰となる。"
+      ],
+      "summary": "英哨戒艦2隻が5カ国防衛取極の年次演習に参加予定。南シナ海で対潜、防空、立ち入り検査などを訓練する。",
+      "sources": [
+        {
+          "name": "Royal Navy：Spey and Tamar join Commonwealth allies",
+          "url": "https://www.royalnavy.mod.uk/news/2026/october/02/20261002-bersama-lima",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-03T16:00:45+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "英海軍の予定発表です。演習は発表時点で未開始。公表時刻は確認できないため日付のみ記載しています。",
+      "image": {
+        "url": "https://sccd.royalnavy.mod.uk/-/jssmedia/rnweb/news/ships/spey/20261002-bersama-lima/speys-sea-boat-returns-to-the-shop-during-last-years-fpda-exercise-bersama-shield.jpg?mw=1320&rev=b55321a0a0ce4a2292c90cc8d775b404",
+        "source_url": "https://www.royalnavy.mod.uk/news/2026/october/02/20261002-bersama-lima",
+        "alt": "前年のベルサマ・シールド演習中、スペイに戻る搭載艇。2025年の資料写真。",
+        "credit": "Royal Navy／Crown copyright（前年のベルサマ・シールド演習、資料写真）",
+        "license": "Crown copyright / Open Government Licence",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-03T16:01:39+09:00"
+      },
+      "id": "2026-10-03-royal-navy-bersama-lima-26-20261002",
+      "topic_key": "royal-navy-bersama-lima-26-20261002",
+      "candidate_slug": "royal-navy-bersama-lima-26-20261002",
+      "first_seen_at_jst": "2026-10-03T16:09:27+09:00",
+      "last_checked_at_jst": "2026-10-03T16:09:27+09:00"
+    },
+    {
+      "slug": "rheinmetall-argotec-satellite-2026-10-03",
+      "headline": "ラインメタルとアルゴテック、防空監視向け衛星を打ち上げ",
+      "category": "新技術・兵器開発",
+      "published_date": "2026-10-02",
+      "published_at_jst": null,
+      "lead": "10月1日に米カリフォルニアから軌道へ。既存の防空システムと情報を結び付ける構想を進める。",
+      "body_paragraphs": [
+        "ラインメタルは10月2日、イタリアの宇宙企業アルゴテックとの協力で開発した最初の衛星を、前日に軌道へ投入したと発表した。打ち上げには米カリフォルニア州のバンデンバーグ宇宙軍基地から離陸したスペースXのファルコン9が使われた。",
+        "同社によると、この計画は航空脅威の兆候を把握し、早期警戒に役立つ情報を既存の防衛・防空システムへ取り込むことを目指す。今回の衛星は軌道上で技術を検証する段階にあり、将来的には複数の衛星へ拡張する方針だ。次の打ち上げは2028年の計画に位置付けられているが、実運用能力の完成や配備完了を意味する発表ではない。"
+      ],
+      "summary": "ラインメタルとアルゴテックが防空監視向け衛星を軌道へ投入。技術検証と将来の複数衛星化を進める。",
+      "sources": [
+        {
+          "name": "Rheinmetall: Erfolgreicher Start mit einer SpaceX-Rakete: Rheinmetall und Argotec bringen ersten Satelliten für die militärische Luftverteidigungsüberwachung in die Umlaufbahn",
+          "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/10/2026-10-02-rheinmetall-und-argotec-bringen-mit-spacex-ersten-satelliten-ins-all",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-03T16:00:00+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "メーカー発表は10月2日、打ち上げは10月1日。軌道上で技術を検証する段階で、実運用能力の完成や配備完了を示す発表ではありません。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/2016_Falcon_9_at_Vandenberg_Air_Force_Base.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:2016_Falcon_9_at_Vandenberg_Air_Force_Base.jpg",
+        "alt": "バンデンバーグ基地の発射台に立つファルコン9。2016年1月16日の資料写真",
+        "credit": "SpaceX / Wikimedia Commons",
+        "license": "CC0 1.0",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-03T16:01:00+09:00"
+      },
+      "id": "2026-10-03-rheinmetall-argotec-satellite-2026-10-03",
+      "topic_key": "rheinmetall-argotec-satellite-2026-10-03",
+      "candidate_slug": "rheinmetall-argotec-satellite-2026-10-03",
+      "first_seen_at_jst": "2026-10-03T16:09:27+09:00",
+      "last_checked_at_jst": "2026-10-03T16:09:27+09:00"
     }
   ],
   "history": [
@@ -231,7 +467,17 @@
       "query_count": 42,
       "added_count": 6,
       "error": null
+    },
+    {
+      "run_id": "manual-20261003-special-collector-01",
+      "trigger": "manual",
+      "status": "OK",
+      "started_at": "2026-10-03T15:58:24+09:00",
+      "finished_at": "2026-10-03T16:09:27+09:00",
+      "base_commit_sha": "f9445096b50686aa53d74bddc2ee2935269373ec",
+      "query_count": 35,
+      "added_count": 6,
+      "error": null
     }
   ]
 }
-
