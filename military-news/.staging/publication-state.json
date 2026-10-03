@@ -1,19 +1,21 @@
 {
   "schema_version": 1,
-  "revision": 1,
+  "revision": 2,
   "last_attempt": {
-    "run_id": "manual-20260927-evening-special-01",
+    "run_id": "manual-20261003-special-publication-01",
     "trigger": "manual",
-    "issue_date": "2026-09-27",
-    "edition": "evening",
-    "label": "夕刊・臨時便",
-    "target_slot": "2026-09-27T17:00:00+09:00",
-    "candidate_count": 5,
-    "new_count": 5,
-    "result": "OK",
+    "issue_date": "2026-10-03",
+    "edition": "special",
+    "label": "臨時更新",
+    "target_slot": null,
+    "candidate_count": 6,
+    "new_count": 6,
+    "result": "PREPARED",
     "failed_stage": null,
-    "started_at": "2026-09-27T17:57:12+09:00",
-    "finished_at": "2026-09-27T17:59:13+09:00"
+    "started_at": "2026-10-03T15:58:24+09:00",
+    "finished_at": null,
+    "publication_method": "temporary branch and Contents API; squash merge pending",
+    "scheduled_trigger_verified": false
   },
   "latest_verified": {
     "issue_date": "2026-09-27",
@@ -51,6 +53,36 @@
       "id": "2026-09-26-dutch-aswf-delay",
       "issue_date": "2026-09-27",
       "article_path": "military-news/articles/2026-09-27/dutch-belgian-aswf-frigate-delay.html"
+    },
+    {
+      "id": "2026-10-03-saudi-houthi-red-sea-preparations-2026-10-03",
+      "issue_date": "2026-10-03",
+      "article_path": "military-news/articles/2026-10-03/saudi-houthi-red-sea-preparations-2026-10-03.html"
+    },
+    {
+      "id": "2026-10-03-taiwan-pla-activity-20261003",
+      "issue_date": "2026-10-03",
+      "article_path": "military-news/articles/2026-10-03/taiwan-pla-activity-20261003.html"
+    },
+    {
+      "id": "2026-10-03-seaguardian-softbank-disaster-connectivity-20261002",
+      "issue_date": "2026-10-03",
+      "article_path": "military-news/articles/2026-10-03/seaguardian-softbank-disaster-connectivity-20261002.html"
+    },
+    {
+      "id": "2026-10-03-us-navy-sm6-multiyear-contract-2026-10-03",
+      "issue_date": "2026-10-03",
+      "article_path": "military-news/articles/2026-10-03/us-navy-sm6-multiyear-contract-2026-10-03.html"
+    },
+    {
+      "id": "2026-10-03-royal-navy-bersama-lima-26-20261002",
+      "issue_date": "2026-10-03",
+      "article_path": "military-news/articles/2026-10-03/royal-navy-bersama-lima-26-20261002.html"
+    },
+    {
+      "id": "2026-10-03-rheinmetall-argotec-satellite-2026-10-03",
+      "issue_date": "2026-10-03",
+      "article_path": "military-news/articles/2026-10-03/rheinmetall-argotec-satellite-2026-10-03.html"
     }
   ],
   "history": [
@@ -67,6 +99,22 @@
       "failed_stage": null,
       "started_at": "2026-09-27T17:57:12+09:00",
       "finished_at": "2026-09-27T17:59:13+09:00"
+    },
+    {
+      "run_id": "manual-20261003-special-publication-01",
+      "trigger": "manual",
+      "issue_date": "2026-10-03",
+      "edition": "special",
+      "label": "臨時更新",
+      "target_slot": null,
+      "candidate_count": 6,
+      "new_count": 6,
+      "result": "PREPARED",
+      "failed_stage": null,
+      "started_at": "2026-10-03T15:58:24+09:00",
+      "finished_at": null,
+      "publication_method": "temporary branch and Contents API; squash merge pending",
+      "scheduled_trigger_verified": false
     }
   ]
 }
