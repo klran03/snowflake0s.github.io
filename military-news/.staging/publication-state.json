@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 4,
+  "revision": 5,
   "last_attempt": {
     "run_id": "scheduled-20261003-1700-publication-01",
     "trigger": "scheduled",
@@ -11,40 +11,65 @@
     "candidate_count": 3,
     "new_count": 3,
     "article_count": 9,
-    "result": "PREPARED",
+    "result": "OK",
     "failed_stage": null,
     "started_at": "2026-10-03T17:06:45+09:00",
-    "finished_at": null,
+    "finished_at": "2026-10-03T17:11:30+09:00",
     "collector_run_id": "scheduled-20261003-1700-collector-01",
     "collector_finished_at": "2026-10-03T17:06:45+09:00",
-    "publication_method": "Contents API on temporary branch; squash merge pending",
+    "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
     "scheduled_trigger_verified": true,
-    "error": null
+    "error": null,
+    "publication_commit_sha": "f27de26a02bbfac6248c877f1dcdc09d043608f2",
+    "pull_request_url": "https://github.com/klran03/snowflake0s.github.io/pull/3",
+    "git_readback_verified": true,
+    "pages_verified": true,
+    "public_http_verified": true,
+    "published_at": "2026-10-03T08:09:11Z",
+    "pages_completed_at": "2026-10-03T08:09:53Z",
+    "verification_started_at": "2026-10-03T17:09:14+09:00",
+    "verification_finished_at": "2026-10-03T17:11:30+09:00",
+    "recovered_errors": [
+      {
+        "stage": "collection",
+        "code": "SOURCE_READER_ERROR",
+        "message": "UNN and Suspilne direct text retrieval returned Internal Error; article bodies were subsequently verified in the public cloud browser."
+      },
+      {
+        "stage": "publication",
+        "code": "RESULT_HANDLER_ERROR",
+        "message": "PR creation succeeded but a local response handler raised TypeError. PR #3 was retrieved and verified before merge; creation was not repeated."
+      }
+    ]
   },
   "latest_verified": {
     "issue_date": "2026-10-03",
-    "edition": "special",
-    "label": "臨時更新",
-    "trigger": "manual",
-    "commit_sha": "2279d239e96284500c5d4acfc888dfe5b98a2e5e",
-    "article_count": 6,
-    "new_badges": 0,
-    "photo_count": 6,
+    "edition": "evening",
+    "label": "夕刊",
+    "trigger": "scheduled",
+    "target_slot": "2026-10-03T17:00:00+09:00",
+    "commit_sha": "f27de26a02bbfac6248c877f1dcdc09d043608f2",
+    "article_count": 9,
+    "new_articles": 3,
+    "new_badges": 3,
+    "photo_count": 9,
     "git_readback_verified": true,
-    "pages_workflow_id": 37105850985,
+    "pages_workflow_id": 37108732216,
     "pages_workflow_conclusion": "success",
     "public_http_verified": true,
     "public_http_method": "Live cloud browser DOM and rendered-page inspection",
     "public_url": "https://klran03.github.io/snowflake0s.github.io/military-news/",
-    "article_pages_checked": 6,
-    "article_images_loaded": 6,
+    "article_pages_checked": 9,
+    "article_images_loaded": 9,
     "current_archive_verified": true,
     "previous_archive_verified": true,
     "previous_archive_articles": 12,
     "previous_archive_new_badges": 0,
     "preserved_archive_links": 36,
-    "checked_at": "2026-10-03T16:20:39+09:00",
-    "scheduled_trigger_verified": false
+    "checked_at": "2026-10-03T17:11:30+09:00",
+    "scheduled_trigger_verified": true,
+    "collector_status": "OK",
+    "collector_buffer_revision": 3
   },
   "published_candidates": [
     {
@@ -164,15 +189,36 @@
       "candidate_count": 3,
       "new_count": 3,
       "article_count": 9,
-      "result": "PREPARED",
+      "result": "OK",
       "failed_stage": null,
       "started_at": "2026-10-03T17:06:45+09:00",
-      "finished_at": null,
+      "finished_at": "2026-10-03T17:11:30+09:00",
       "collector_run_id": "scheduled-20261003-1700-collector-01",
       "collector_finished_at": "2026-10-03T17:06:45+09:00",
-      "publication_method": "Contents API on temporary branch; squash merge pending",
+      "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
       "scheduled_trigger_verified": true,
-      "error": null
+      "error": null,
+      "publication_commit_sha": "f27de26a02bbfac6248c877f1dcdc09d043608f2",
+      "pull_request_url": "https://github.com/klran03/snowflake0s.github.io/pull/3",
+      "git_readback_verified": true,
+      "pages_verified": true,
+      "public_http_verified": true,
+      "published_at": "2026-10-03T08:09:11Z",
+      "pages_completed_at": "2026-10-03T08:09:53Z",
+      "verification_started_at": "2026-10-03T17:09:14+09:00",
+      "verification_finished_at": "2026-10-03T17:11:30+09:00",
+      "recovered_errors": [
+        {
+          "stage": "collection",
+          "code": "SOURCE_READER_ERROR",
+          "message": "UNN and Suspilne direct text retrieval returned Internal Error; article bodies were subsequently verified in the public cloud browser."
+        },
+        {
+          "stage": "publication",
+          "code": "RESULT_HANDLER_ERROR",
+          "message": "PR creation succeeded but a local response handler raised TypeError. PR #3 was retrieved and verified before merge; creation was not repeated."
+        }
+      ]
     }
   ]
 }
