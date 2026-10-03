@@ -1,46 +1,28 @@
 {
   "schema_version": 1,
-  "revision": 5,
+  "revision": 6,
   "last_attempt": {
-    "run_id": "scheduled-20261003-1700-publication-01",
+    "run_id": "scheduled-20261004-0500-publication-01",
     "trigger": "scheduled",
-    "issue_date": "2026-10-03",
-    "edition": "evening",
-    "label": "夕刊",
-    "target_slot": "2026-10-03T17:00:00+09:00",
-    "candidate_count": 3,
-    "new_count": 3,
-    "article_count": 9,
-    "result": "OK",
+    "issue_date": "2026-10-04",
+    "edition": "morning",
+    "label": "朝刊",
+    "target_slot": "2026-10-04T05:00:00+09:00",
+    "trigger_observed_at": "2026-10-04T04:57:45+09:00",
+    "candidate_count": 6,
+    "new_count": 6,
+    "article_count": 6,
+    "new_badges": 0,
+    "result": "PREPARED",
     "failed_stage": null,
-    "started_at": "2026-10-03T17:06:45+09:00",
-    "finished_at": "2026-10-03T17:11:30+09:00",
-    "collector_run_id": "scheduled-20261003-1700-collector-01",
-    "collector_finished_at": "2026-10-03T17:06:45+09:00",
-    "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
+    "started_at": "2026-10-04T05:09:59+09:00",
+    "finished_at": null,
+    "collector_run_id": "scheduled-20261004-0500-collector-01",
+    "collector_finished_at": "2026-10-04T05:09:23+09:00",
+    "collection_status": "OK",
+    "publication_method": "Contents API on temporary branch; fixed-head readback and squash merge pending",
     "scheduled_trigger_verified": true,
-    "error": null,
-    "publication_commit_sha": "f27de26a02bbfac6248c877f1dcdc09d043608f2",
-    "pull_request_url": "https://github.com/klran03/snowflake0s.github.io/pull/3",
-    "git_readback_verified": true,
-    "pages_verified": true,
-    "public_http_verified": true,
-    "published_at": "2026-10-03T08:09:11Z",
-    "pages_completed_at": "2026-10-03T08:09:53Z",
-    "verification_started_at": "2026-10-03T17:09:14+09:00",
-    "verification_finished_at": "2026-10-03T17:11:30+09:00",
-    "recovered_errors": [
-      {
-        "stage": "collection",
-        "code": "SOURCE_READER_ERROR",
-        "message": "UNN and Suspilne direct text retrieval returned Internal Error; article bodies were subsequently verified in the public cloud browser."
-      },
-      {
-        "stage": "publication",
-        "code": "RESULT_HANDLER_ERROR",
-        "message": "PR creation succeeded but a local response handler raised TypeError. PR #3 was retrieved and verified before merge; creation was not repeated."
-      }
-    ]
+    "error": null
   },
   "latest_verified": {
     "issue_date": "2026-10-03",
@@ -141,6 +123,36 @@
       "id": "2026-10-03-ukraine-night-drone-attack",
       "issue_date": "2026-10-03",
       "article_path": "military-news/articles/2026-10-03/ukraine-night-drone-attack-20261003.html"
+    },
+    {
+      "id": "2026-10-04-north-korea-strategic-missile-disclosure",
+      "issue_date": "2026-10-04",
+      "article_path": "military-news/articles/2026-10-04/north-korea-strategic-missile-disclosure-2026-10-03.html"
+    },
+    {
+      "id": "2026-10-04-india-fighter-fleet-induction-plan",
+      "issue_date": "2026-10-04",
+      "article_path": "military-news/articles/2026-10-04/india-fighter-fleet-induction-plan-2026-10-03.html"
+    },
+    {
+      "id": "2026-10-04-zelensky-refinery-policy",
+      "issue_date": "2026-10-04",
+      "article_path": "military-news/articles/2026-10-04/zelensky-refinery-policy-20261003.html"
+    },
+    {
+      "id": "2026-10-03-portugal-lajes-probe",
+      "issue_date": "2026-10-04",
+      "article_path": "military-news/articles/2026-10-04/portugal-lajes-iran-probe-20261003.html"
+    },
+    {
+      "id": "2026-10-04-mekelle-airport-control",
+      "issue_date": "2026-10-04",
+      "article_path": "military-news/articles/2026-10-04/mekelle-airport-control-20261003.html"
+    },
+    {
+      "id": "2026-10-03-jef-defence-ministers-keflavik",
+      "issue_date": "2026-10-04",
+      "article_path": "military-news/articles/2026-10-04/jef-keflavik-statement-20261003.html"
     }
   ],
   "history": [
@@ -219,6 +231,29 @@
           "message": "PR creation succeeded but a local response handler raised TypeError. PR #3 was retrieved and verified before merge; creation was not repeated."
         }
       ]
+    },
+    {
+      "run_id": "scheduled-20261004-0500-publication-01",
+      "trigger": "scheduled",
+      "issue_date": "2026-10-04",
+      "edition": "morning",
+      "label": "朝刊",
+      "target_slot": "2026-10-04T05:00:00+09:00",
+      "trigger_observed_at": "2026-10-04T04:57:45+09:00",
+      "candidate_count": 6,
+      "new_count": 6,
+      "article_count": 6,
+      "new_badges": 0,
+      "result": "PREPARED",
+      "failed_stage": null,
+      "started_at": "2026-10-04T05:09:59+09:00",
+      "finished_at": null,
+      "collector_run_id": "scheduled-20261004-0500-collector-01",
+      "collector_finished_at": "2026-10-04T05:09:23+09:00",
+      "collection_status": "OK",
+      "publication_method": "Contents API on temporary branch; fixed-head readback and squash merge pending",
+      "scheduled_trigger_verified": true,
+      "error": null
     }
   ]
 }
