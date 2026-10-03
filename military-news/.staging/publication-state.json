@@ -1,26 +1,25 @@
 {
   "schema_version": 1,
-  "revision": 3,
+  "revision": 4,
   "last_attempt": {
-    "run_id": "manual-20261003-special-publication-01",
-    "trigger": "manual",
+    "run_id": "scheduled-20261003-1700-publication-01",
+    "trigger": "scheduled",
     "issue_date": "2026-10-03",
-    "edition": "special",
-    "label": "臨時更新",
-    "target_slot": null,
-    "candidate_count": 6,
-    "new_count": 6,
-    "result": "OK",
+    "edition": "evening",
+    "label": "夕刊",
+    "target_slot": "2026-10-03T17:00:00+09:00",
+    "candidate_count": 3,
+    "new_count": 3,
+    "article_count": 9,
+    "result": "PREPARED",
     "failed_stage": null,
-    "started_at": "2026-10-03T15:58:24+09:00",
-    "finished_at": "2026-10-03T16:20:39+09:00",
-    "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
-    "scheduled_trigger_verified": false,
-    "publication_commit_sha": "2279d239e96284500c5d4acfc888dfe5b98a2e5e",
-    "pull_request_url": "https://github.com/klran03/snowflake0s.github.io/pull/2",
-    "git_readback_verified": true,
-    "pages_verified": true,
-    "public_http_verified": true
+    "started_at": "2026-10-03T17:06:45+09:00",
+    "finished_at": null,
+    "collector_run_id": "scheduled-20261003-1700-collector-01",
+    "collector_finished_at": "2026-10-03T17:06:45+09:00",
+    "publication_method": "Contents API on temporary branch; squash merge pending",
+    "scheduled_trigger_verified": true,
+    "error": null
   },
   "latest_verified": {
     "issue_date": "2026-10-03",
@@ -102,6 +101,21 @@
       "id": "2026-10-03-rheinmetall-argotec-satellite-2026-10-03",
       "issue_date": "2026-10-03",
       "article_path": "military-news/articles/2026-10-03/rheinmetall-argotec-satellite-2026-10-03.html"
+    },
+    {
+      "id": "2026-10-03-north-korea-missile-launch",
+      "issue_date": "2026-10-03",
+      "article_path": "military-news/articles/2026-10-03/north-korea-missile-launch-2026-10-03.html"
+    },
+    {
+      "id": "2026-10-03-paparo-india-visit",
+      "issue_date": "2026-10-03",
+      "article_path": "military-news/articles/2026-10-03/paparo-india-visit-2026-10-03.html"
+    },
+    {
+      "id": "2026-10-03-ukraine-night-drone-attack",
+      "issue_date": "2026-10-03",
+      "article_path": "military-news/articles/2026-10-03/ukraine-night-drone-attack-20261003.html"
     }
   ],
   "history": [
@@ -139,6 +153,26 @@
       "git_readback_verified": true,
       "pages_verified": true,
       "public_http_verified": true
+    },
+    {
+      "run_id": "scheduled-20261003-1700-publication-01",
+      "trigger": "scheduled",
+      "issue_date": "2026-10-03",
+      "edition": "evening",
+      "label": "夕刊",
+      "target_slot": "2026-10-03T17:00:00+09:00",
+      "candidate_count": 3,
+      "new_count": 3,
+      "article_count": 9,
+      "result": "PREPARED",
+      "failed_stage": null,
+      "started_at": "2026-10-03T17:06:45+09:00",
+      "finished_at": null,
+      "collector_run_id": "scheduled-20261003-1700-collector-01",
+      "collector_finished_at": "2026-10-03T17:06:45+09:00",
+      "publication_method": "Contents API on temporary branch; squash merge pending",
+      "scheduled_trigger_verified": true,
+      "error": null
     }
   ]
 }
