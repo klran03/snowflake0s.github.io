@@ -1,25 +1,27 @@
 {
   "schema_version": 1,
-  "revision": 3,
+  "revision": 4,
   "initialized_at": "2026-09-27T17:12:19+09:00",
-  "updated_at": "2026-10-03T17:06:45+09:00",
+  "updated_at": "2026-10-04T05:09:23+09:00",
   "last_run": {
-    "run_id": "scheduled-20261003-1700-collector-01",
+    "run_id": "scheduled-20261004-0500-collector-01",
     "trigger": "scheduled",
     "status": "OK",
-    "target_slot": "2026-10-03T17:00:00+09:00",
-    "started_at": "2026-10-03T16:57:58+09:00",
-    "finished_at": "2026-10-03T17:06:45+09:00",
-    "base_commit_sha": "eb4c0896010d9cee9eb0bac115460f38a85665fa",
-    "query_count": 34,
-    "added_count": 3,
+    "target_slot": "2026-10-04T05:00:00+09:00",
+    "trigger_observed_at": "2026-10-04T04:57:45+09:00",
+    "started_at": "2026-10-04T04:58:24+09:00",
+    "finished_at": "2026-10-04T05:09:23+09:00",
+    "base_commit_sha": "8cfa64ed30a9795d255d66f5a85495d50beb06e2",
+    "query_count": 42,
+    "query_count_is_minimum": true,
+    "added_count": 6,
     "error": null,
-    "notes": "定期起動を受けて収集。前回臨時更新に未掲載の当日ニュースを追加。既掲載6件の重複追加はなし。"
+    "notes": "05:00定期枠。早期起動後に収集を準備し、05:00以降に確定。前日17:00〜当日05:00を中心に検索。公開時刻不明の記事と枠前の出来事は本文に明記。既掲載記事の単純再掲なし。"
   },
-  "last_successful_collection_at": "2026-10-03T17:06:45+09:00",
+  "last_successful_collection_at": "2026-10-04T05:09:23+09:00",
   "coverage": {
-    "from_jst": "2026-10-02T05:00:00+09:00",
-    "through_jst": "2026-10-03T17:06:45+09:00",
+    "from_jst": "2026-10-03T17:00:00+09:00",
+    "through_jst": "2026-10-04T05:00:00+09:00",
     "completed": true
   },
   "candidates": [
@@ -594,6 +596,277 @@
         "is_reference": true,
         "checked_at_jst": "2026-10-03T17:01:35+09:00"
       }
+    },
+    {
+      "id": "2026-10-04-north-korea-strategic-missile-disclosure",
+      "topic_key": "north-korea-strategic-missile-disclosure-2026-10-03",
+      "candidate_slug": "north-korea-strategic-missile-disclosure-2026-10-03",
+      "headline": "北朝鮮、3日朝の発射を「中距離戦略ミサイル」と説明　変則軌道も主張",
+      "category": "戦争・紛争",
+      "published_date": "2026-10-03",
+      "published_at_jst": "2026-10-03T19:34:00+09:00",
+      "first_seen_at_jst": "2026-10-04T04:59:47+09:00",
+      "last_checked_at_jst": "2026-10-04T05:03:50+09:00",
+      "lead": "金与正氏が3日夜、同日朝の発射について談話を公表。ミサイルの種類や性能に関する北朝鮮側の説明が新たに伝えられた。",
+      "body_paragraphs": [
+        "共同通信によると、北朝鮮の金与正朝鮮労働党総務部長は10月3日、同日朝に日本海へ発射したのは中距離戦略ミサイルだったと表明した。朝鮮中央通信を通じた説明で、金正恩総書記が訓練に立ち会ったとしている。",
+        "日テレNEWS NNNは、談話の発表を3日午後7時ごろと報道した。金与正氏は変則的な軌道や人工知能（AI）の導入によって迎撃を難しくしたと主張したが、記事はその性能を独立に実証するものではない。今回の談話は3日朝の発射に関する続報で、新たな発射を伝えるものではない。"
+      ],
+      "summary": "北朝鮮が3日夜、朝の発射は中距離戦略ミサイルだったと説明。変則軌道やAIによる性能向上は北朝鮮側の主張。",
+      "sources": [
+        {
+          "name": "共同通信（熊本日日新聞掲載）「北朝鮮、3日の発射は中距離戦略ミサイル」",
+          "url": "https://kumanichi.com/articles/2042683",
+          "published_at_jst": "2026-10-03T19:34:00+09:00",
+          "checked_at_jst": "2026-10-04T05:03:50+09:00"
+        },
+        {
+          "name": "日テレNEWS NNN（ライブドアニュース掲載）金与正氏のミサイル談話",
+          "url": "https://news.livedoor.com/article/detail/32481424/",
+          "published_at_jst": "2026-10-03T20:53:00+09:00",
+          "checked_at_jst": "2026-10-04T05:03:50+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "10月3日朝の発射そのものは前号掲載済みです。夜の談話で機種の説明と性能主張が加わったため続報として扱います。変則軌道やAI導入による性能は北朝鮮側の主張で、独立確認されていません。",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/North_Korea%27s_ballistic_missile_-_North_Korea_Victory_Day-2013_02.jpg/1280px-North_Korea%27s_ballistic_missile_-_North_Korea_Victory_Day-2013_02.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:North_Korea%27s_ballistic_missile_-_North_Korea_Victory_Day-2013_02.jpg",
+        "alt": "北朝鮮の軍事パレードに登場した弾道ミサイル。2013年撮影の資料写真で、今回発射された機体ではない。",
+        "credit": "Stefan Krasowski / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-04T05:03:50+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。"
+      }
+    },
+    {
+      "id": "2026-10-04-india-fighter-fleet-induction-plan",
+      "topic_key": "india-fighter-fleet-induction-plan-2026-10-03",
+      "candidate_slug": "india-fighter-fleet-induction-plan-2026-10-03",
+      "headline": "インド空軍、戦闘機を年36～40機必要と説明　ラファール契約は年度内目標",
+      "category": "空軍",
+      "published_date": "2026-10-03",
+      "published_at_jst": "2026-10-03T22:51:00+09:00",
+      "first_seen_at_jst": "2026-10-04T05:00:13+09:00",
+      "last_checked_at_jst": "2026-10-04T05:03:50+09:00",
+      "lead": "シン空軍参謀長が3日の会見で、戦闘機の納入遅延と部隊規模の不足に言及。国産機と輸入機を組み合わせた補充方針を示した。",
+      "body_paragraphs": [
+        "インド空軍のアマル・プリート・シン参謀長は10月3日の記者会見で、戦闘機部隊の減少を食い止めるため、今後数年間にわたり毎年36～40機の導入が必要だと述べた。インディアン・エクスプレスなどが報じた。新型機の納入遅延が続くなか、国産テジャスの改良型や多用途戦闘機調達を通じて不足を埋める考えだ。",
+        "タイムズ・オブ・インディアによると、シン氏はフランス製ラファール114機の調達契約について、今会計年度中の締結を見込むと説明した。また、国産第5世代戦闘機AMCAの開発が遅れれば別の選択肢も検討するとした一方、ロシアから提案されたSu-57の導入は決定していないと述べた。"
+      ],
+      "summary": "インド空軍トップが年36～40機の導入必要性を表明。ラファール114機の契約締結を年度内に見込むが、確定した契約ではない。",
+      "sources": [
+        {
+          "name": "The Indian Express: IAF needs 36–40 jets annually; Pakistan’s fifth-gen jet plan worrying",
+          "url": "https://indianexpress.com/article/india/iaf-needs-36-40-aircraft-annually-fighter-squadrons-10905443/",
+          "published_at_jst": "2026-10-03T22:51:00+09:00",
+          "checked_at_jst": "2026-10-04T05:03:50+09:00"
+        },
+        {
+          "name": "Times of India: Delay in induction of fighter jets hurting us, we need 36–40 aircraft annually",
+          "url": "https://timesofindia.indiatimes.com/defence/news/delay-in-induction-of-fighter-jets-hurting-us-we-need-36-40-aircraft-annually-iaf-chief-says-pak-buying-training-its-pilots-on-chinese-stealth-jets-cause-for-worry/articleshow/134662486.cms",
+          "published_at_jst": "2026-10-04T00:52:00+09:00",
+          "checked_at_jst": "2026-10-04T05:03:50+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "10月3日の記者会見に関する現地2紙の報道です。記事時刻はインド標準時から日本時間に換算しています。調達の必要性・見通しを示した段階で、ラファール契約の締結やSu-57導入の決定を意味しません。",
+      "image": {
+        "url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2406/8468347/1000w_q95.jpg",
+        "source_url": "https://www.dvidshub.net/image/8468347/indian-air-force-participates-rf-24-2",
+        "alt": "2024年6月6日、米アラスカ州で訓練中のインド空軍ラファール。資料写真。尾翼部分には公開元がぼかしを加えている。",
+        "credit": "U.S. Air Force / Airman 1st Class Samantha White / DVIDS",
+        "license": "Public domain (U.S. federal government work)",
+        "license_url": "https://www.dvidshub.net/about/copyright",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-04T05:03:50+09:00",
+        "changes": "公開元が機体尾翼をぼかし処理。本媒体で画像データの追加加工はなし。一覧では表示領域に合わせて切り抜き表示。",
+        "notice": "The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement."
+      }
+    },
+    {
+      "id": "2026-10-04-zelensky-refinery-policy",
+      "topic_key": "zelensky-refinery-policy-20261003",
+      "candidate_slug": "zelensky-refinery-policy-20261003",
+      "headline": "ゼレンスキー氏、ロシア製油所への攻撃継続を表明　空襲拡大への対抗策",
+      "category": "戦争・紛争",
+      "published_date": "2026-10-04",
+      "published_at_jst": "2026-10-04T01:03:00+09:00",
+      "first_seen_at_jst": "2026-10-04T04:59:48+09:00",
+      "last_checked_at_jst": "2026-10-04T05:04:35+09:00",
+      "lead": "ウクライナのゼレンスキー大統領は、ロシアの空襲拡大に対抗して製油所への攻撃を続ける方針を示した。ロイターが3日にインタビューを報じた。",
+      "body_paragraphs": [
+        "ゼレンスキー氏は、ロシアが冬を前に攻撃対象を広げ、都市から住民を退去させようとしていると主張した。ウクライナは戦費の源泉となる石油精製施設を狙う一方、民間施設への無差別攻撃はしないと述べた。ロシアの方針に関する説明は同氏の見解で、独立に確認されていない。",
+        "ロシア外務省も3日、ウクライナ側の攻撃への報復だとしてキーウなどへの攻撃を続けると発表し、外国人や外交官に退避を促した。ロイターによるとロシア大統領府から即時の回答はなかった。双方とも民間人を意図的に標的にしていることは否定している。"
+      ],
+      "summary": "ウクライナは製油所攻撃の継続方針。ロシアも都市への攻撃継続を表明し、応酬が続く。",
+      "sources": [
+        {
+          "name": "Reuters／StreetInsider：ゼレンスキー氏インタビュー",
+          "url": "https://www.streetinsider.com/Reuters/Exclusive-Ukraine%2Bwill%2Bhit%2BRussian%2Brefineries%2Bin%2Bresponse%2Bto%2BMoscows%2Bnew%2Bdoctrine%2Bof%2Bairstrikes/27144295.html",
+          "published_at_jst": "2026-10-04T01:03:00+09:00",
+          "checked_at_jst": "2026-10-04T05:04:35+09:00"
+        },
+        {
+          "name": "Reuters／Internazionale：同インタビュー英語本文",
+          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/03/exclusive-ukraine-will-hit-russian-refineries-in-response-to-moscow-s-new-doctrine-of-airstrikes",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-04T05:04:35+09:00"
+        },
+        {
+          "name": "Reuters／Investing.com：ロシア外務省の攻撃継続表明",
+          "url": "https://www.investing.com/news/world-news/russia-pledges-to-continue-massive-strikes-on-kyiv-urges-foreign-diplomats-to-leave-city-4930853",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-04T05:04:35+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "ロイターのインタビュー報道と外務省発言の報道を本文確認。掲載時刻はStreetInsiderの10月3日12:03 EDTを日本時間に換算。取材は2日、記事公開は3日。ロシアの攻撃意図はゼレンスキー氏の主張で、事実認定しない。既刊の夜間無人機157機集計とは異なる政策発言。転載先同士は独立した裏付けではない。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Visit_of_Volodymyr_Zelenskyy%2C_President_of_Ukraine%2C_to_the_European_Commission_-_2025.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Visit_of_Volodymyr_Zelenskyy,_President_of_Ukraine,_to_the_European_Commission_-_2025.jpg",
+        "alt": "2025年8月に欧州委員会を訪れたゼレンスキー大統領。今回のインタビューを写したものではない。",
+        "caption": "ゼレンスキー大統領（2025年8月17日、ブリュッセル、資料写真）。今回の取材時の写真ではありません。",
+        "credit": "Dati Bendo / © European Union, 2025 / EC - Audiovisual Service, via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "画像データ未加工。一覧では表示領域に合わせて切り抜き表示。",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-04T05:04:35+09:00"
+      }
+    },
+    {
+      "id": "2026-10-03-portugal-lajes-probe",
+      "topic_key": "portugal-lajes-iran-probe-20261003",
+      "candidate_slug": "portugal-lajes-iran-probe-20261003",
+      "headline": "ポルトガル検察、対イラン作戦でのラジェス基地利用を捜査　米軍機通過の許可巡り",
+      "category": "その他",
+      "published_date": "2026-10-03",
+      "published_at_jst": "2026-10-03T22:12:00+09:00",
+      "first_seen_at_jst": "2026-10-04T05:01:47+09:00",
+      "last_checked_at_jst": "2026-10-04T05:04:35+09:00",
+      "lead": "ポルトガル検察は3日、イランとの紛争に関連した米軍のラジェス航空基地利用を政府が許可した経緯について、適法性を調べる捜査を始めたと明らかにした。",
+      "body_paragraphs": [
+        "ロイターによると、捜査は野党・左翼ブロック側の申し立てを受けたもの。米国との協定では平時の基地利用は事前許可を要しないが、戦闘が始まればポルトガルの承認が必要となる。政府は米軍機の複数の通過を認めていた。",
+        "ランジェル外相はこれまで、米側から防御的で必要かつ均衡の取れた行動に限り、軍事目標のみを対象とするとの説明を得たとして、許可は国際法に沿うと説明している。今回の捜査開始は違法性の認定ではない。外務省は今回の報道へのコメントを控えた。"
+      ],
+      "summary": "アゾレス諸島の米軍中継拠点を巡り検察が捜査。政府は基地利用許可の適法性を主張している。",
+      "sources": [
+        {
+          "name": "Reuters／MarketScreener：ラジェス基地利用に関する捜査開始",
+          "url": "https://www.marketscreener.com/news/portugal-prosecutors-probe-legality-of-us-use-of-lajes-base-in-iran-war-ce785ddbdd8ef420",
+          "published_at_jst": "2026-10-03T22:12:00+09:00",
+          "checked_at_jst": "2026-10-04T05:04:35+09:00"
+        },
+        {
+          "name": "Iran International：ポルトガル検察の捜査報道",
+          "url": "https://www.iranintl.com/en/202610037066",
+          "published_at_jst": "2026-10-03T22:23:00+09:00",
+          "checked_at_jst": "2026-10-04T05:04:35+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "Reuters本文に検察当局の声明と政府側の説明を確認。掲載時刻09:12 EDT＝13:12 UTC。Iran Internationalの14:23 GMT+1＝13:23 UTC。捜査開始と法的結論を区別した。検察の原文声明そのものは今回取得していない。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Lajes_Air_Base%2C_2009.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lajes_Air_Base,_2009.jpg",
+        "alt": "2009年のラジェス航空基地の航空写真。今回の米軍機通過を写したものではない。",
+        "caption": "ラジェス航空基地の航空写真（2009年、資料写真）。今回の米軍活動を撮影したものではありません。",
+        "credit": "Guido Melo / U.S. Air Force, via Wikimedia Commons",
+        "license": "Public domain (U.S. Air Force)",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lajes_Air_Base,_2009.jpg#Licensing",
+        "changes": "Commons掲載版は色調補正済み。当サイトでは画像データ未加工、一覧では表示領域に合わせて切り抜き表示。",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-04T05:04:35+09:00",
+        "notice": "The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement."
+      }
+    },
+    {
+      "id": "2026-10-04-mekelle-airport-control",
+      "topic_key": "mekelle-airport-control-20261003",
+      "candidate_slug": "mekelle-airport-control-20261003",
+      "headline": "エチオピア政府軍がメケレ空港を再掌握との証言　市内の支配状況は不明",
+      "category": "戦争・紛争",
+      "published_date": "2026-10-04",
+      "published_at_jst": "2026-10-04T02:11:54+09:00",
+      "first_seen_at_jst": "2026-10-04T05:01:47+09:00",
+      "last_checked_at_jst": "2026-10-04T05:04:35+09:00",
+      "lead": "エチオピア北部ティグライ州のメケレ空港を政府軍が再掌握したと、住民らが3日、AP通信に語った。市全体の支配状況はなお確認できていない。",
+      "body_paragraphs": [
+        "APは現地住民に加え、匿名のエチオピア軍将官の証言も報じた。空港を取り戻した時刻や経緯は不明で、通信障害が確認作業を妨げている。政府とティグライ人民解放戦線（TPLF）の正式発表は、同記事の時点ではなかった。",
+        "ロイターも同日早く、3人の情報源に基づき空港の再掌握を報じていた。同空港は9月23日に反政府側が押さえた3空港の一つ。政府軍と同盟勢力による反攻が進む一方、ロイターも現地情勢の独立検証はできておらず、市全体の陥落や戦闘終結を意味するとは限らない。"
+      ],
+      "summary": "APが空港の再掌握について住民と軍将官の証言を追加。メケレ市内の支配状況には不確実性が残る。",
+      "sources": [
+        {
+          "name": "AP：メケレ住民と軍将官の証言",
+          "url": "https://apnews.com/article/ethiopia-tigray-airport-tplf-federal-forces-conflict-87740d41b686614b63ccdba54dbd3168",
+          "published_at_jst": "2026-10-04T02:11:54+09:00",
+          "checked_at_jst": "2026-10-04T05:04:35+09:00"
+        },
+        {
+          "name": "Reuters／StreetInsider：3情報源による空港再掌握の先行報道",
+          "url": "https://www.streetinsider.com/Reuters/Ethiopia%2Bgovernment%2Bforces%2Bretake%2Bairport%2Bin%2BTigrays%2Bcapital,%2Bsources%2Bsay/27144222.html",
+          "published_at_jst": "2026-10-03T16:08:00+09:00",
+          "checked_at_jst": "2026-10-04T05:04:35+09:00"
+        }
+      ],
+      "confidence": "medium",
+      "verification_notes": "対象時間帯の新規要素はAPの17:11:54 UTC配信（検索のAP配信時刻表示）で追加された現地住民と匿名軍将官の証言。Reuters先行報道は07:08 UTCで今回の収集窓より52分前のため背景扱い。掌握した正確な時刻は不明。空港の掌握とメケレ市全体の制圧を混同しない。いずれも地上状況の独立した物理的検証ではない。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/004a_Mekelle_Airport.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:004a_Mekelle_Airport.jpg",
+        "alt": "2008年に滑走路側から撮影されたメケレ空港。今回の戦闘や現在の状態を写したものではない。",
+        "caption": "メケレ空港（2008年5月20日、資料写真）。今回の戦闘や現在の状態を示す写真ではありません。",
+        "credit": "Simon Temple, via Wikimedia Commons",
+        "license": "Public domain (author dedication)",
+        "license_url": "https://commons.wikimedia.org/wiki/File:004a_Mekelle_Airport.jpg#Licensing",
+        "changes": "画像データ未加工。一覧では表示領域に合わせて切り抜き表示。",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-04T05:04:35+09:00"
+      }
+    },
+    {
+      "id": "2026-10-03-jef-defence-ministers-keflavik",
+      "topic_key": "jef-keflavik-statement-20261003",
+      "candidate_slug": "jef-keflavik-statement-20261003",
+      "headline": "JEF国防相、ウクライナとの協力深化を確認　カナダ加盟の検討も前進",
+      "category": "その他",
+      "published_date": "2026-10-03",
+      "published_at_jst": null,
+      "first_seen_at_jst": "2026-10-04T05:00:53+09:00",
+      "last_checked_at_jst": "2026-10-04T05:01:36+09:00",
+      "lead": "英国主導の統合遠征軍（JEF）の国防相会合が2日にアイスランドで開かれ、ウクライナの活動参加を深める方針を確認した。3日公表の共同声明は、カナダの加盟申請についても検討を進めたとしている。",
+      "body_paragraphs": [
+        "英国政府が10月3日に公表した共同声明によると、JEF加盟国などの国防相は2日、アイスランドのケプラビーク空軍基地で会合を開いた。ウクライナの掃海艦艇が今年、主要演習「ライオン・プロテクター」に初参加したことを踏まえ、同国との強化パートナーシップを引き続き進めるとした。",
+        "会合ではカナダ国防相も交え、同国の加盟申請に関して首脳への共同勧告に向けた作業を進めた。加盟の承認を発表したものではない。北極圏・北大西洋・バルト海を重視し、NATOの地域防衛計画との整合や、ハイブリッド脅威への対応、防衛産業協力を強化する方針も示した。"
+      ],
+      "summary": "JEFはウクライナとの演習・防衛協力を深化へ。カナダの加盟は引き続き検討段階。",
+      "sources": [
+        {
+          "name": "英国防省：JEF国防相共同声明（10月2日会合、3日公表）",
+          "url": "https://www.gov.uk/government/news/joint-statement-from-defence-ministers-of-the-joint-expeditionary-force-02-october-2026",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-04T05:01:36+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "共同声明の本文を確認。会合は10月2日、英国政府ページの公表日は10月3日ですが公開時刻は不明です。直近12時間内の開催とはしていません。カナダの加盟決定や、新たな装備供与の完了を示す声明ではありません。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Aerial_view_of_Keflavik_air_base_on_26_October_2016.JPG",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Keflavik_air_base_on_26_October_2016.JPG",
+        "alt": "ケプラビーク空軍基地の空撮。2016年10月26日の資料写真で、今回の国防相会合を写したものではない。",
+        "caption": "会合が開かれたケプラビーク空軍基地の空撮（2016年10月26日、資料写真）。今回の会合の写真ではありません。",
+        "credit": "U.S. Navy / Lt. Cmdr. Matthew Newman, via Wikimedia Commons",
+        "license": "U.S. Government public domain",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "changes": "画像データ未加工。記事一覧では表示領域に合わせて切り抜き表示。",
+        "notice": "The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-04T05:01:56+09:00"
+      }
     }
   ],
   "history": [
@@ -631,6 +904,21 @@
       "added_count": 3,
       "error": null,
       "notes": "定期起動を受けて収集。前回臨時更新に未掲載の当日ニュースを追加。既掲載6件の重複追加はなし。"
+    },
+    {
+      "run_id": "scheduled-20261004-0500-collector-01",
+      "trigger": "scheduled",
+      "status": "OK",
+      "target_slot": "2026-10-04T05:00:00+09:00",
+      "trigger_observed_at": "2026-10-04T04:57:45+09:00",
+      "started_at": "2026-10-04T04:58:24+09:00",
+      "finished_at": "2026-10-04T05:09:23+09:00",
+      "base_commit_sha": "8cfa64ed30a9795d255d66f5a85495d50beb06e2",
+      "query_count": 42,
+      "query_count_is_minimum": true,
+      "added_count": 6,
+      "error": null,
+      "notes": "05:00定期枠。早期起動後に収集を準備し、05:00以降に確定。前日17:00〜当日05:00を中心に検索。公開時刻不明の記事と枠前の出来事は本文に明記。既掲載記事の単純再掲なし。"
     }
   ]
 }
