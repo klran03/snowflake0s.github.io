@@ -1,37 +1,26 @@
 {
   "schema_version": 1,
-  "revision": 7,
+  "revision": 8,
   "last_attempt": {
-    "run_id": "scheduled-20261004-0500-publication-01",
+    "run_id": "scheduled-20261004-1700-publication-01",
     "trigger": "scheduled",
     "issue_date": "2026-10-04",
-    "edition": "morning",
-    "label": "朝刊",
-    "target_slot": "2026-10-04T05:00:00+09:00",
-    "trigger_observed_at": "2026-10-04T04:57:45+09:00",
-    "candidate_count": 6,
-    "new_count": 6,
-    "article_count": 6,
-    "new_badges": 0,
-    "result": "OK",
+    "edition": "evening",
+    "label": "夕刊",
+    "target_slot": "2026-10-04T17:00:00+09:00",
+    "trigger_observed_at": "2026-10-04T16:59:10+09:00",
+    "candidate_count": 4,
+    "new_count": 4,
+    "article_count": 10,
+    "result": "PREPARED",
     "failed_stage": null,
-    "started_at": "2026-10-04T05:09:59+09:00",
-    "finished_at": "2026-10-04T05:16:19+09:00",
-    "collector_run_id": "scheduled-20261004-0500-collector-01",
-    "collector_finished_at": "2026-10-04T05:09:23+09:00",
-    "collection_status": "OK",
-    "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
+    "started_at": "2026-10-04T17:12:20+09:00",
+    "finished_at": null,
+    "collector_run_id": "scheduled-20261004-1700-collector-01",
+    "collector_finished_at": "2026-10-04T17:11:43+09:00",
+    "publication_method": "Contents API on temporary branch; squash merge pending",
     "scheduled_trigger_verified": true,
-    "error": null,
-    "publication_commit_sha": "88619c5ce95d7d7d8ce6a5bdad1c34294942d710",
-    "pull_request_url": "https://github.com/klran03/snowflake0s.github.io/pull/4",
-    "git_readback_verified": true,
-    "pages_verified": true,
-    "public_http_verified": true,
-    "published_at": "2026-10-03T20:12:29Z",
-    "pages_completed_at": "2026-10-03T20:14:00Z",
-    "verification_started_at": "2026-10-04T05:12:47+09:00",
-    "verification_finished_at": "2026-10-04T05:16:19+09:00"
+    "error": null
   },
   "latest_verified": {
     "issue_date": "2026-10-04",
@@ -161,6 +150,26 @@
       "id": "2026-10-03-jef-defence-ministers-keflavik",
       "issue_date": "2026-10-04",
       "article_path": "military-news/articles/2026-10-04/jef-keflavik-statement-20261003.html"
+    },
+    {
+      "id": "2026-10-04-india-pakistan-border-diplomatic-protests",
+      "issue_date": "2026-10-04",
+      "article_path": "military-news/articles/2026-10-04/india-pakistan-border-diplomatic-protests-2026-10-03.html"
+    },
+    {
+      "id": "2026-10-04-japan-us-marine-arrest-protest",
+      "issue_date": "2026-10-04",
+      "article_path": "military-news/articles/2026-10-04/japan-us-marine-arrest-protest-2026-10-04.html"
+    },
+    {
+      "id": "2026-10-04-merz-kyiv-drone-aid-visit",
+      "issue_date": "2026-10-04",
+      "article_path": "military-news/articles/2026-10-04/merz-kyiv-drone-aid-visit-20261004.html"
+    },
+    {
+      "id": "2026-10-04-ukraine-night-drone-attack",
+      "issue_date": "2026-10-04",
+      "article_path": "military-news/articles/2026-10-04/ukraine-night-drone-attack-20261004.html"
     }
   ],
   "history": [
@@ -271,6 +280,27 @@
       "pages_completed_at": "2026-10-03T20:14:00Z",
       "verification_started_at": "2026-10-04T05:12:47+09:00",
       "verification_finished_at": "2026-10-04T05:16:19+09:00"
+    },
+    {
+      "run_id": "scheduled-20261004-1700-publication-01",
+      "trigger": "scheduled",
+      "issue_date": "2026-10-04",
+      "edition": "evening",
+      "label": "夕刊",
+      "target_slot": "2026-10-04T17:00:00+09:00",
+      "trigger_observed_at": "2026-10-04T16:59:10+09:00",
+      "candidate_count": 4,
+      "new_count": 4,
+      "article_count": 10,
+      "result": "PREPARED",
+      "failed_stage": null,
+      "started_at": "2026-10-04T17:12:20+09:00",
+      "finished_at": null,
+      "collector_run_id": "scheduled-20261004-1700-collector-01",
+      "collector_finished_at": "2026-10-04T17:11:43+09:00",
+      "publication_method": "Contents API on temporary branch; squash merge pending",
+      "scheduled_trigger_verified": true,
+      "error": null
     }
   ]
 }
