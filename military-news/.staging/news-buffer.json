@@ -1,27 +1,26 @@
 {
   "schema_version": 1,
-  "revision": 4,
+  "revision": 5,
   "initialized_at": "2026-09-27T17:12:19+09:00",
-  "updated_at": "2026-10-04T05:09:23+09:00",
+  "updated_at": "2026-10-04T17:11:43+09:00",
   "last_run": {
-    "run_id": "scheduled-20261004-0500-collector-01",
+    "run_id": "scheduled-20261004-1700-collector-01",
     "trigger": "scheduled",
     "status": "OK",
-    "target_slot": "2026-10-04T05:00:00+09:00",
-    "trigger_observed_at": "2026-10-04T04:57:45+09:00",
-    "started_at": "2026-10-04T04:58:24+09:00",
-    "finished_at": "2026-10-04T05:09:23+09:00",
-    "base_commit_sha": "8cfa64ed30a9795d255d66f5a85495d50beb06e2",
-    "query_count": 42,
-    "query_count_is_minimum": true,
-    "added_count": 6,
+    "target_slot": "2026-10-04T17:00:00+09:00",
+    "trigger_observed_at": "2026-10-04T16:59:10+09:00",
+    "started_at": "2026-10-04T17:01:26+09:00",
+    "finished_at": "2026-10-04T17:11:43+09:00",
+    "base_commit_sha": "5f80020c74b5d7908b1047fe323db8d292a811d6",
+    "query_count": 60,
+    "added_count": 4,
     "error": null,
-    "notes": "05:00定期枠。早期起動後に収集を準備し、05:00以降に確定。前日17:00〜当日05:00を中心に検索。公開時刻不明の記事と枠前の出来事は本文に明記。既掲載記事の単純再掲なし。"
+    "notes": "17:00定期枠。05:00〜17:00を中心に検索・本文確認。既掲載の再報道や枠前の単純再掲は除外。印パの外交抗議は3日発生・4日朝報道と明記。Web本文取得失敗はクラウドブラウザで回復し、直接読めなかった一次発表は確認済みとして扱わない。"
   },
-  "last_successful_collection_at": "2026-10-04T05:09:23+09:00",
+  "last_successful_collection_at": "2026-10-04T17:11:43+09:00",
   "coverage": {
-    "from_jst": "2026-10-03T17:00:00+09:00",
-    "through_jst": "2026-10-04T05:00:00+09:00",
+    "from_jst": "2026-10-04T05:00:00+09:00",
+    "through_jst": "2026-10-04T17:00:00+09:00",
     "completed": true
   },
   "candidates": [
@@ -867,6 +866,198 @@
         "is_reference": true,
         "checked_at_jst": "2026-10-04T05:01:56+09:00"
       }
+    },
+    {
+      "id": "2026-10-04-india-pakistan-border-diplomatic-protests",
+      "topic_key": "india-pakistan-border-diplomatic-protests-2026-10-03",
+      "candidate_slug": "india-pakistan-border-diplomatic-protests-2026-10-03",
+      "headline": "印パ、国境での射殺事件を巡り相互に外交官召喚　双方の説明に隔たり",
+      "category": "その他",
+      "published_date": "2026-10-04",
+      "published_at_jst": null,
+      "first_seen_at_jst": "2026-10-04T17:02:21+09:00",
+      "last_checked_at_jst": "2026-10-04T17:11:23+09:00",
+      "lead": "インド公営放送が4日朝、パキスタン側への抗議を報道。2日の国境事件を受け、両国が3日に相手国の外交官を呼び、異なる説明に基づいて抗議した。",
+      "body_paragraphs": [
+        "インドとパキスタンは10月3日、2日にパンジャブ地方の国際国境で起きた射殺事件を巡り、それぞれ相手国の代理大使を召喚した。インド公営放送Akashvaniは4日朝、インド外務省が越境侵入の防止などをパキスタン側に求めたと伝えた。",
+        "インド側は、3人が自国領に入り、国境警備隊（BSF）の警告に従わず国境のフェンスへ近づいたため、差し迫った脅威に対処したと説明している。一方、パキスタン外務省は、殺害された2人は非武装の民間人だったと主張し、透明性のある調査と再発防止をインド側に要求した。",
+        "死者の立場や発砲に至った状況を巡る両国の説明は一致しておらず、本記事はどちらかの説明を独立に確認したものではない。事件は2日、外交官の召喚は3日の出来事で、4日に新たな発砲が起きたという報道ではない。"
+      ],
+      "summary": "2日の国境事件を受け、印パが3日に外交官を相互召喚。インドは越境侵入、パキスタンは非武装の民間人への発砲と主張している。",
+      "sources": [
+        {
+          "name": "Akashvani（インド公営放送）「India summons Pak envoy to register strong protest over continued facilitation of illegal cross-border infiltration」",
+          "url": "https://newsonair.gov.in/india-summons-pak-envoy-to-register-strong-protest-over-continued-facilitation-of-illegal-cross-border-infiltration/",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-04T17:11:23+09:00"
+        },
+        {
+          "name": "The Statesman「India summons top Pakistan diplomat to protest cross-border infiltration」（10月3日）",
+          "url": "https://www.thestatesman.com/world/baseless-motivated-allegations-india-summons-top-pakistan-diplomat-to-protest-cross-border-infiltration-1503646553.html",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-04T17:11:23+09:00"
+        },
+        {
+          "name": "パキスタン外務省「Indian Chargé d’Affaires Summoned over Killing of Two Pakistani Civilians」（10月3日）",
+          "url": "https://mofa.gov.pk/press-releases/indian-charge-daffaires-summoned-over-killing-of-two-pakistani-civilians",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-04T17:11:23+09:00"
+        },
+        {
+          "name": "Reuters（Khaleej Times掲載）「Pakistan summons Indian diplomat over killing of two civilians at border」（10月3日）",
+          "url": "https://www.khaleejtimes.com/world/asia/pakistan-summon-indian-diplomat-2-pakistani-civilians-killed-at-border",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-04T17:11:23+09:00"
+        }
+      ],
+      "confidence": "medium",
+      "verification_notes": "発砲事件は10月2日、外交官の召喚は3日で、4日朝の報道を起点に確認した未掲載ニュースです。死者の身分や越境・警告・脅威の説明は各当事者の主張で、独立確認はできていません。インド公営放送、The Statesman、Reuters配信とパキスタン外務省の発表本文を確認しました。記事表示のタイムゾーンや更新時刻に不確実性があるため、正確な公開時刻は未確認としています。",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/India-Pakistan_Border_at_Night.jpg/1280px-India-Pakistan_Border_at_Night.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:India-Pakistan_Border_at_Night.jpg",
+        "alt": "国際宇宙ステーションから撮影したインド・パキスタン国境周辺の夜景。2015年9月23日撮影の資料写真で、今回の事件現場を写したものではない。",
+        "credit": "NASA / ISS Expedition 45 crew / Wikimedia Commons",
+        "license": "Public domain（NASA）",
+        "license_url": "https://commons.wikimedia.org/wiki/Template:PD-NASA",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-04T17:11:23+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。"
+      }
+    },
+    {
+      "id": "2026-10-04-japan-us-marine-arrest-protest",
+      "topic_key": "japan-us-marine-arrest-protest-2026-10-04",
+      "candidate_slug": "japan-us-marine-arrest-protest-2026-10-04",
+      "headline": "小泉防衛相、米側に綱紀粛正など要求　那覇の強盗殺人容疑で海兵隊員逮捕受け",
+      "category": "その他",
+      "published_date": "2026-10-04",
+      "published_at_jst": "2026-10-04T13:08:00+09:00",
+      "first_seen_at_jst": "2026-10-04T17:03:46+09:00",
+      "last_checked_at_jst": "2026-10-04T17:11:23+09:00",
+      "lead": "那覇市のホテルでの強盗殺人事件に関連して米海兵隊員が逮捕されたことを受け、小泉防衛相は4日、米側に抗議し、教育や事件防止の徹底を申し入れたと明らかにした。",
+      "body_paragraphs": [
+        "FNNとANNは10月4日、沖縄県那覇市のホテルで女性が殺害された事件で米海兵隊員が強盗殺人の疑いで逮捕されたことを受け、小泉進次郎防衛相が米側への抗議と再発防止の申し入れを説明したと報じた。逮捕は容疑に基づくもので、刑事責任が確定したことを意味しない。",
+        "小泉氏は神奈川県横須賀市の陸上自衛隊武山駐屯地で記者団に対し、隊員教育、綱紀粛正、事件・事故防止の徹底や、遺族への迅速かつ適切な対応を米側に求めたと述べた。今後も外務省と連携して対応する考えを示した。",
+        "ANNによると、外務省も4日に米側へ抗議し、捜査への協力と再発防止を求めた。在日米軍関係者による事件への政府対応を伝えるもので、捜査対象者の行為を断定するものではない。"
+      ],
+      "summary": "米海兵隊員の強盗殺人容疑での逮捕を受け、小泉防衛相が4日、米側への抗議と教育・綱紀粛正などの申し入れを説明した。",
+      "sources": [
+        {
+          "name": "FNNプライムオンライン「小泉防衛大臣『言語道断で許されず強い憤り覚える』」",
+          "url": "https://www.fnn.jp/articles/-/1126344",
+          "published_at_jst": "2026-10-04T13:08:00+09:00",
+          "checked_at_jst": "2026-10-04T17:11:23+09:00"
+        },
+        {
+          "name": "ANN「小泉防衛大臣『言語道断で強い憤り』 強盗殺人容疑で米兵逮捕受け」",
+          "url": "https://news.tv-asahi.co.jp/news_politics/articles/000537823.html",
+          "published_at_jst": "2026-10-04T13:24:00+09:00",
+          "checked_at_jst": "2026-10-04T17:11:23+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "4日午後のFNNとANNの本文を照合しました。報道の対象は容疑に基づく逮捕と防衛相・外務省の対応です。捜査対象者と被害者の氏名は掲載せず、行為や有罪を断定していません。参考写真は2023年8月3日の防衛省市ヶ谷地区で、今回の取材場所や事件現場ではありません。",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Japanese_Ministry_of_Defense_headquarters_%2820230803155040%29.jpg/1280px-Japanese_Ministry_of_Defense_headquarters_%2820230803155040%29.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Japanese_Ministry_of_Defense_headquarters_(20230803155040).jpg",
+        "alt": "防衛省市ヶ谷地区の庁舎と正門。2023年8月3日撮影の資料写真で、今回の取材や事件の現場ではない。",
+        "credit": "N509FZ / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-04T17:11:23+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。"
+      }
+    },
+    {
+      "id": "2026-10-04-merz-kyiv-drone-aid-visit",
+      "topic_key": "merz-kyiv-drone-aid-visit-20261004",
+      "candidate_slug": "merz-kyiv-drone-aid-visit-20261004",
+      "headline": "メルツ独首相がキーウ訪問　軍事支援10億ユーロと無人機共同生産を協議へ",
+      "category": "その他",
+      "published_date": "2026-10-04",
+      "published_at_jst": "2026-10-04T13:53:00+09:00",
+      "first_seen_at_jst": "2026-10-04T17:06:22+09:00",
+      "last_checked_at_jst": "2026-10-04T17:06:22+09:00",
+      "lead": "ドイツのメルツ首相が4日朝、経済・防衛企業の代表らとキーウに到着した。軍事支援の拠出と迎撃無人機などの共同生産計画が焦点となる。",
+      "body_paragraphs": [
+        "ロイターとドイツ公共放送DWによると、メルツ首相は10月4日朝に列車でキーウを訪れ、ウクライナへの支援継続を表明した。ライヒェ経済・エネルギー相に加え、防衛・エネルギー企業の幹部らが同行している。",
+        "ロイターが独政府当局者の説明として伝えた訪問計画には、軍事支援10億ユーロとエネルギー設備修復向け3億5000万ユーロの拠出が含まれる。ジェット推進の攻撃無人機を迎撃する機体などの共同生産合意も詰める見通しだ。記事確認時点では発表予定・協議段階の内容であり、合意締結や装備の引き渡しが完了したと確認されたものではない。"
+      ],
+      "summary": "独首相がキーウで支援継続を示した。資金拠出と迎撃無人機の共同生産は訪問時の協議・発表予定として報じられている。",
+      "sources": [
+        {
+          "name": "Reuters／AOL：独首相のキーウ到着と支援・無人機生産計画",
+          "url": "https://www.aol.com/articles/germanys-merz-arrives-kyiv-finalize-045319000.html",
+          "published_at_jst": "2026-10-04T13:53:00+09:00",
+          "checked_at_jst": "2026-10-04T17:06:22+09:00"
+        },
+        {
+          "name": "DW：キーウ訪問と追加支援の見通し",
+          "url": "https://amp.dw.com/en/germanys-merz-arrives-in-kyiv-to-pledge-more-support/a-79534734",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-04T17:06:22+09:00"
+        }
+      ],
+      "confidence": "medium",
+      "verification_notes": "到着は10月4日朝（ウクライナ時間）。Reuters配信は04:53 UTC＝13:53 JST。両記事の本文を確認しました。資金と共同生産の詳細は独政府筋などの説明に基づく予定で、実施済みと扱っていません。朝刊のゼレンスキー氏インタビューとは別の新規訪問です。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Friedrich_Merz_June_2025.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Friedrich_Merz_June_2025.jpg",
+        "alt": "メルツ独首相。2025年6月5日の訪米時の参考写真で、今回のキーウ訪問を写したものではない。",
+        "caption": "メルツ独首相（2025年6月5日、訪米時の参考写真）。今回のキーウ訪問の写真ではありません。",
+        "credit": "The White House / Wikimedia Commons（TDKR Chicago 101によるトリミング）",
+        "license": "U.S. Government public domain",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "changes": "Commons掲載版はトリミング済み。当サイトでは画像データ未加工、一覧では表示領域に合わせて切り抜き表示。",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-04T17:06:22+09:00"
+      }
+    },
+    {
+      "id": "2026-10-04-ukraine-night-drone-attack",
+      "topic_key": "ukraine-night-drone-attack-20261004",
+      "candidate_slug": "ukraine-night-drone-attack-20261004",
+      "headline": "ウクライナ空軍、4日未明に無人機など135機の攻撃と発表　125機に対処",
+      "category": "戦争・紛争",
+      "published_date": "2026-10-04",
+      "published_at_jst": null,
+      "first_seen_at_jst": "2026-10-04T17:06:22+09:00",
+      "last_checked_at_jst": "2026-10-04T17:06:22+09:00",
+      "lead": "ウクライナ空軍は4日朝、前夜から無人機など計135機の攻撃を受けたと発表した。123機の無人機と2機の「バンデロール／ダンT」を撃墜・無力化したとする暫定集計。",
+      "body_paragraphs": [
+        "ウクライナ通信社UNNとニュース媒体Babelは10月4日、同国空軍の発表を基に、3日夜から4日朝にかけてロシアがシャヘド型などの無人機と「バンデロール／ダンT」を計135機投入したと伝えた。空軍は4日8時30分の暫定集計で、123機の無人機と2機のバンデロール／ダンTを撃墜または無力化したとしている。",
+        "UNNが伝えた発表では、5カ所への着弾と、撃墜機の破片の5カ所への落下が報告された。迎撃数には電子戦などによる無力化も含まれる。発表時点で一部の無人機は飛行を続けていた。攻撃数や対処結果はウクライナ側の説明であり、今回の確認では独立した検証はできていない。"
+      ],
+      "summary": "4日朝の新たな攻撃集計は135機中125機に対処とする内容。前日の157機・131機という別の夜の発表とは区別する。",
+      "sources": [
+        {
+          "name": "UNN：10月4日朝の空軍暫定集計",
+          "url": "https://unn.ua/en/amp/the-russian-federation-attacked-ukraine-with-135-drones-the-number-of-downed-targets-is-increasing-with-hits-recorded-at-5-locations",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-04T17:06:22+09:00"
+        },
+        {
+          "name": "Babel：123機の無人機と2機のバンデロールへの対処を報道",
+          "url": "https://babel.ua/news/130690-rosiya-vnochi-atakuvala-ukrajinu-135-dronami-i-banderolyami-na-sumshchini-ye-postrazhdali",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-04T17:06:22+09:00"
+        }
+      ],
+      "confidence": "medium",
+      "verification_notes": "2媒体の本文を確認しました。いずれも同じウクライナ空軍発表に基づき、独立した戦果確認ではありません。記事表示時刻のタイムゾーンを確定できないため公開時刻は未確認としています。集計時点は現地4日8時30分（日本時間14時30分）で、前日号掲載の3日朝の攻撃とは別の事象です。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Sacred_Defence_Week_parade%2C_2023%2C_in_Tehran_%28113%29.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sacred_Defence_Week_parade,_2023,_in_Tehran_(113).jpg",
+        "alt": "イランの軍事パレードで車両に搭載されたシャヘド136。2023年の資料写真で、今回の攻撃の機体ではない。",
+        "caption": "イランの軍事パレードに登場したシャヘド136（2023年、資料写真）。今回の攻撃を写したものではありません。",
+        "credit": "Amin Ahouei / Tasnim News Agency, via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Commons掲載版はトリミング・透かし除去済み。当サイトでは画像データ未加工、一覧では表示領域に合わせて切り抜き表示。",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-04T17:06:22+09:00"
+      }
     }
   ],
   "history": [
@@ -919,6 +1110,20 @@
       "added_count": 6,
       "error": null,
       "notes": "05:00定期枠。早期起動後に収集を準備し、05:00以降に確定。前日17:00〜当日05:00を中心に検索。公開時刻不明の記事と枠前の出来事は本文に明記。既掲載記事の単純再掲なし。"
+    },
+    {
+      "run_id": "scheduled-20261004-1700-collector-01",
+      "trigger": "scheduled",
+      "status": "OK",
+      "target_slot": "2026-10-04T17:00:00+09:00",
+      "trigger_observed_at": "2026-10-04T16:59:10+09:00",
+      "started_at": "2026-10-04T17:01:26+09:00",
+      "finished_at": "2026-10-04T17:11:43+09:00",
+      "base_commit_sha": "5f80020c74b5d7908b1047fe323db8d292a811d6",
+      "query_count": 60,
+      "added_count": 4,
+      "error": null,
+      "notes": "17:00定期枠。05:00〜17:00を中心に検索・本文確認。既掲載の再報道や枠前の単純再掲は除外。印パの外交抗議は3日発生・4日朝報道と明記。Web本文取得失敗はクラウドブラウザで回復し、直接読めなかった一次発表は確認済みとして扱わない。"
     }
   ]
 }
