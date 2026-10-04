@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": 8,
+  "revision": 9,
   "last_attempt": {
     "run_id": "scheduled-20261004-1700-publication-01",
     "trigger": "scheduled",
@@ -12,43 +12,62 @@
     "candidate_count": 4,
     "new_count": 4,
     "article_count": 10,
-    "result": "PREPARED",
+    "result": "OK",
     "failed_stage": null,
     "started_at": "2026-10-04T17:12:20+09:00",
-    "finished_at": null,
+    "finished_at": "2026-10-04T17:16:00+09:00",
     "collector_run_id": "scheduled-20261004-1700-collector-01",
     "collector_finished_at": "2026-10-04T17:11:43+09:00",
-    "publication_method": "Contents API on temporary branch; squash merge pending",
+    "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
     "scheduled_trigger_verified": true,
-    "error": null
+    "error": null,
+    "publication_commit_sha": "6851d45343eaee2234aba1d52a9a5370b823f460",
+    "pull_request_url": "https://github.com/klran03/snowflake0s.github.io/pull/5",
+    "git_readback_verified": true,
+    "pages_verified": true,
+    "public_http_verified": true,
+    "published_at": "2026-10-04T08:14:04Z",
+    "pages_completed_at": "2026-10-04T08:14:54Z",
+    "verification_started_at": "2026-10-04T17:14:06+09:00",
+    "verification_finished_at": "2026-10-04T17:16:00+09:00",
+    "recovered_errors": [
+      {
+        "stage": "collection",
+        "code": "SOURCE_READER_ERROR",
+        "message": "Web reader errors for selected sources were resolved through body checks in the cloud browser; the unavailable original Telegram post was not represented as directly verified."
+      }
+    ]
   },
   "latest_verified": {
     "issue_date": "2026-10-04",
-    "edition": "morning",
-    "label": "朝刊",
+    "edition": "evening",
+    "label": "夕刊",
     "trigger": "scheduled",
-    "target_slot": "2026-10-04T05:00:00+09:00",
-    "commit_sha": "88619c5ce95d7d7d8ce6a5bdad1c34294942d710",
-    "article_count": 6,
-    "new_badges": 0,
-    "photo_count": 6,
+    "target_slot": "2026-10-04T17:00:00+09:00",
+    "commit_sha": "6851d45343eaee2234aba1d52a9a5370b823f460",
+    "article_count": 10,
+    "new_badges": 4,
+    "photo_count": 10,
     "git_readback_verified": true,
-    "pages_workflow_id": 37150709391,
+    "pages_workflow_id": 37188254782,
     "pages_workflow_conclusion": "success",
     "public_http_verified": true,
     "public_http_method": "Live cloud browser DOM and rendered-page inspection",
     "public_url": "https://klran03.github.io/snowflake0s.github.io/military-news/",
-    "article_pages_checked": 6,
-    "article_images_loaded": 6,
+    "article_pages_checked": 10,
+    "article_images_loaded": 10,
     "current_archive_verified": true,
     "previous_archive_verified": true,
     "previous_archive_articles": 9,
     "previous_archive_new_badges": 0,
-    "previous_article_pages_checked": 3,
+    "previous_article_pages_checked": 0,
     "previous_article_new_badges": 0,
     "preserved_archive_links": 37,
-    "checked_at": "2026-10-04T05:16:19+09:00",
-    "scheduled_trigger_verified": true
+    "checked_at": "2026-10-04T17:16:00+09:00",
+    "scheduled_trigger_verified": true,
+    "collector_status": "OK",
+    "collector_buffer_revision": 5,
+    "new_articles": 4
   },
   "published_candidates": [
     {
@@ -292,15 +311,31 @@
       "candidate_count": 4,
       "new_count": 4,
       "article_count": 10,
-      "result": "PREPARED",
+      "result": "OK",
       "failed_stage": null,
       "started_at": "2026-10-04T17:12:20+09:00",
-      "finished_at": null,
+      "finished_at": "2026-10-04T17:16:00+09:00",
       "collector_run_id": "scheduled-20261004-1700-collector-01",
       "collector_finished_at": "2026-10-04T17:11:43+09:00",
-      "publication_method": "Contents API on temporary branch; squash merge pending",
+      "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
       "scheduled_trigger_verified": true,
-      "error": null
+      "error": null,
+      "publication_commit_sha": "6851d45343eaee2234aba1d52a9a5370b823f460",
+      "pull_request_url": "https://github.com/klran03/snowflake0s.github.io/pull/5",
+      "git_readback_verified": true,
+      "pages_verified": true,
+      "public_http_verified": true,
+      "published_at": "2026-10-04T08:14:04Z",
+      "pages_completed_at": "2026-10-04T08:14:54Z",
+      "verification_started_at": "2026-10-04T17:14:06+09:00",
+      "verification_finished_at": "2026-10-04T17:16:00+09:00",
+      "recovered_errors": [
+        {
+          "stage": "collection",
+          "code": "SOURCE_READER_ERROR",
+          "message": "Web reader errors for selected sources were resolved through body checks in the cloud browser; the unavailable original Telegram post was not represented as directly verified."
+        }
+      ]
     }
   ]
 }
