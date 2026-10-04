@@ -1,26 +1,27 @@
 {
   "schema_version": 1,
-  "revision": 5,
+  "revision": 6,
   "initialized_at": "2026-09-27T17:12:19+09:00",
-  "updated_at": "2026-10-04T17:11:43+09:00",
+  "updated_at": "2026-10-05T05:11:37+09:00",
   "last_run": {
-    "run_id": "scheduled-20261004-1700-collector-01",
+    "run_id": "scheduled-20261005-0500-collector-01",
     "trigger": "scheduled",
     "status": "OK",
-    "target_slot": "2026-10-04T17:00:00+09:00",
-    "trigger_observed_at": "2026-10-04T16:59:10+09:00",
-    "started_at": "2026-10-04T17:01:26+09:00",
-    "finished_at": "2026-10-04T17:11:43+09:00",
-    "base_commit_sha": "5f80020c74b5d7908b1047fe323db8d292a811d6",
-    "query_count": 60,
-    "added_count": 4,
+    "target_slot": "2026-10-05T05:00:00+09:00",
+    "trigger_observed_at": "2026-10-05T05:02:30+09:00",
+    "started_at": "2026-10-05T05:03:05+09:00",
+    "finished_at": "2026-10-05T05:11:37+09:00",
+    "base_commit_sha": "533e7dfdc5b8624e27d3d5468a46f807bbe98d38",
+    "query_count": 88,
+    "query_count_is_minimum": true,
+    "added_count": 6,
     "error": null,
-    "notes": "17:00定期枠。05:00〜17:00を中心に検索・本文確認。既掲載の再報道や枠前の単純再掲は除外。印パの外交抗議は3日発生・4日朝報道と明記。Web本文取得失敗はクラウドブラウザで回復し、直接読めなかった一次発表は確認済みとして扱わない。"
+    "notes": "5時の定期枠。前日17時〜当日5時を中心に一般報道、公式発表、防衛専門媒体を検索。本文と写真の個別利用条件を確認し、既掲載の単純再掲は除外。日時不明のものは推測せず未確認とした。Web本文取得の一部エラーはクラウドブラウザで本文確認して解消。"
   },
-  "last_successful_collection_at": "2026-10-04T17:11:43+09:00",
+  "last_successful_collection_at": "2026-10-05T05:11:37+09:00",
   "coverage": {
-    "from_jst": "2026-10-04T05:00:00+09:00",
-    "through_jst": "2026-10-04T17:00:00+09:00",
+    "from_jst": "2026-10-04T17:00:00+09:00",
+    "through_jst": "2026-10-05T05:00:00+09:00",
     "completed": true
   },
   "candidates": [
@@ -1058,6 +1059,288 @@
         "is_reference": true,
         "checked_at_jst": "2026-10-04T17:06:22+09:00"
       }
+    },
+    {
+      "id": "2026-10-05-germany-ukraine-confirmed-package-20261004",
+      "topic_key": "germany-ukraine-confirmed-package-20261004",
+      "candidate_slug": "germany-ukraine-confirmed-package-20261004",
+      "headline": "独、対ウクライナ支援13億ユーロ超を発表　迎撃ドローンの共同生産を後押し",
+      "category": "その他",
+      "published_date": "2026-10-04",
+      "published_at_jst": null,
+      "first_seen_at_jst": "2026-10-05T05:04:53+09:00",
+      "last_checked_at_jst": "2026-10-05T05:10:00+09:00",
+      "lead": "ドイツのメルツ首相は10月4日、キーウでゼレンスキー大統領と会談し、軍事支援と冬季のエネルギー対策を合わせて13億ユーロを超える追加支援を発表した。訪問前に示されていた支援計画が、首脳会談で具体化した。",
+      "body_paragraphs": [
+        "ドイツ政府が公表した会見記録によると、軍事支援は約10億ユーロ。ジェット推進式ドローンを迎撃する機体の共同生産に資金を充てるほか、スタンドオフ兵器、攻撃ドローン、衛星関連技術を提供する。エネルギー分野には約3億5000万ユーロを用意し、発電機や変電設備、修理を支える。",
+        "ウクライナ大統領府によると、両国間の合意・文書は計15件、総額85億ユーロ超となり、安全保障協力や調達、共同事業などを含む。無人システム対策の協力に関する意向宣言にも署名した。ただし、この総額をすべて新規の無償軍事援助と捉えることはできず、より広い「ドローン協定」は同日夕の大統領演説でも準備中とされた。"
+      ],
+      "summary": "独が約10億ユーロの軍事支援と約3億5000万ユーロのエネルギー支援を発表。15件の合意総額と援助額は区別が必要。",
+      "sources": [
+        {
+          "name": "German Federal Government press conference transcript",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/pk-merz-kyjiw-2455620",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-05T05:10:00+09:00"
+        },
+        {
+          "name": "President of Ukraine: results of meeting",
+          "url": "https://www.president.gov.ua/en/news/13-milyarda-yevro-dlya-posilennya-oboroni-ukrayini-ta-energe-106725",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-05T05:10:00+09:00"
+        },
+        {
+          "name": "President of Ukraine: Ukrainian-German Business Forum address",
+          "url": "https://www.president.gov.ua/en/news/zvernennya-prezidenta-ukrayini-do-predstavnikiv-ukrayinsko-n-106729",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-05T05:10:00+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "独政府会見記録とウクライナ大統領府の2件の発表本文を確認。約13億5000万ユーロの支援と、調達・事業を含む85億ユーロ超の合意総額を区別。装備の引き渡し完了や、より広いドローン協定の締結完了を意味しない。前号の訪問・協議予定を受けた重要続報。公式ページの表示日は4日で、時刻欄のタイムゾーンが明示されないため厳密な公開時刻は未確認。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Volodymyr_Zelenskyy_and_Friedrich_Merz_Discussed_Military_Assistance_and_Steps_to_Establish_a_Just_Peace._-_54192417777.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "source_url": "https://commons.wikimedia.org/wiki/File%3AVolodymyr_Zelenskyy_and_Friedrich_Merz_Discussed_Military_Assistance_and_Steps_to_Establish_a_Just_Peace._-_54192417777.jpg",
+        "alt": "2024年のウクライナ訪問時、室内を歩くフリードリヒ・メルツ氏",
+        "caption": "メルツ氏のウクライナ訪問時の資料写真（2024年12月9日）。今回の会談を撮影した写真ではない。",
+        "credit": "President Of Ukraine / Wikimedia Commons (CC0)",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-05T05:10:00+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。"
+      }
+    },
+    {
+      "id": "2026-10-05-yemen-government-offensive-announced-20261004",
+      "topic_key": "yemen-government-offensive-announced-20261004",
+      "candidate_slug": "yemen-government-offensive-announced-20261004",
+      "headline": "イエメン政府、フーシ派への大規模作戦開始を表明　タイズ周辺でも戦闘",
+      "category": "戦争・紛争",
+      "published_date": "2026-10-04",
+      "published_at_jst": null,
+      "first_seen_at_jst": "2026-10-05T05:04:53+09:00",
+      "last_checked_at_jst": "2026-10-05T05:10:00+09:00",
+      "lead": "サウジアラビアが支援するイエメン政府のアリミ大統領評議会議長は10月4日、フーシ派の支配地域奪還を目指す大規模軍事作戦の開始をテレビ演説で表明した。ロイターが報じた。",
+      "body_paragraphs": [
+        "ロイターによると、サウジ側が航空作戦を担い、イエメン側が地上で戦う構想が準備されていた。演説は国家機関の統治を全土に及ぼす目標を示したが、部隊規模や進軍経路、奪還成果などの詳細は明らかになっていない。作戦開始の発表と、現地で確認された戦果は分けて見る必要がある。",
+        "一方、同通信が引用した軍関係者は、フーシ派が過去48時間にタイズ周辺の要衝で前進し、アデンへ通じる最後の道路に迫ったと説明した。道路の遮断は都市の包囲につながりかねない。紅海南端のバブ・エル・マンデブ海峡周辺の支配を巡る攻防と、市民への補給・避難への影響が焦点となる。"
+      ],
+      "summary": "イエメン政府が領土奪還作戦を正式表明。具体的な作戦展開は未詳で、タイズの補給路を巡る戦況にも注意が必要。",
+      "sources": [
+        {
+          "name": "Reuters / GMA News Online, Mohammed Ghobari and Timour Azhari",
+          "url": "https://www.gmanetwork.com/news/topstories/world/1004730/yemen-leader-announces-major-military-operations-against-iran-backed-houthis/story/",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-05T05:10:00+09:00"
+        },
+        {
+          "name": "CNN / KQ2, Tim Lister and Ibrahim Dahman",
+          "url": "https://www.kq2.com/cnn/cnn-world/2026/10/04/yemens-saudi-backed-government-announces-major-offensive-against-iran-backed-houthis/",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-05T05:10:00+09:00"
+        }
+      ],
+      "confidence": "medium",
+      "verification_notes": "GMA掲載のロイター記事の全文を確認し、CNN配信とも照合。作戦開始はイエメン政府の発表。タイズ周辺の前進はロイターが引用する軍関係者の説明で、包囲の完成や戦果を独立確認したものではない。GMA表示は4日22時46分だがタイムゾーン明示がないため厳密な公開時刻は未確認。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Taizz_flicr02.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Taizz_flicr02.jpg",
+        "alt": "山上のカイロ城塞と周囲に広がるタイズ市街の資料写真",
+        "caption": "イエメンのタイズとカイロ城塞の資料写真（2006〜2007年）。現在の戦闘を撮影した写真ではない。",
+        "credit": "ai@ce / Wikimedia Commons (CC BY 2.0)",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/deed.en",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-05T05:10:00+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。"
+      }
+    },
+    {
+      "id": "20261005-philippines-china-patrols",
+      "topic_key": "philippines-china-thitu-scarborough-oct4-2026",
+      "candidate_slug": "philippines-china-thitu-scarborough-patrols",
+      "headline": "フィリピン、中国海警船の進路妨害と軍機の危険接近を訴え",
+      "category": "海軍",
+      "published_date": "2026-10-04",
+      "published_at_jst": "2026-10-04T18:29:00+09:00",
+      "first_seen_at_jst": "2026-10-05T05:04:00+09:00",
+      "last_checked_at_jst": "2026-10-05T05:08:20+09:00",
+      "lead": "フィリピン当局は４日、南シナ海で中国海警船が漁業取締りを妨げ、中国軍機が哨戒機に危険な接近をしたと相次いで発表した。海上の事案は同日のパグアサ島（ティトゥ島）近海、航空機の事案は３日のスカボロー礁付近で起きたという。",
+      "body_paragraphs": [
+        "比沿岸警備隊によると、沿岸警備隊、海軍、警察の合同チームがパグアサ島西方約３海里で爆発物漁が疑われる外国漁船を追跡した際、中国海警船２隻が警笛や無線で警告し、進路を妨げた。中国海軍のヘリコプターも上空を４回旋回したとされる。比側は安全上の理由から追跡を打ち切り、島へ戻った。",
+        "比軍は別の発表で、C-208哨戒機が中国軍機２機と遭遇し、うちJ-16戦闘機が前方や周囲で繰り返し接近したと説明した。哨戒機は任務を終え、無事に帰還したという。ロイターの４日の配信時点で、在マニラ中国大使館は両事案へのコメント要請に直ちに回答していない。妨害や危険性の評価は比当局の説明に基づく。"
+      ],
+      "summary": "比当局が南シナ海で中国海警船の取締り妨害とJ-16の哨戒機への接近を公表。船艇は追跡を中止し、哨戒機は安全に帰還した。",
+      "sources": [
+        {
+          "name": "Reuters / StreetInsider：Philippines accuses Chinese coast guard of blocking law enforcement mission near Thitu",
+          "url": "https://www.streetinsider.com/Reuters/Philippines%2Baccuses%2BChinese%2Bcoast%2Bguard%2Bof%2Bblocking%2Blaw%2Benforcement%2Bmission%2Bnear%2BThitu/27144364.html",
+          "published_at_jst": "2026-10-04T18:29:00+09:00",
+          "checked_at_jst": "2026-10-05T05:08:20+09:00"
+        },
+        {
+          "name": "Philstar.com：Chinese J-16 dangerously intercepts PH patrol aircraft over Bajo de Masinloc",
+          "url": "https://www.philstar.com/headlines/2026/10/04/2560905/chinese-j-16-dangerously-intercepts-ph-patrol-aircraft-over-bajo-de-masinloc",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-05T05:08:20+09:00"
+        },
+        {
+          "name": "GMA News：AFP says Chinese J-16 fighter flew too close to PH aircraft over Bajo de Masinloc",
+          "url": "https://www.gmanetwork.com/news/topstories/nation/1004738/afp-says-chinese-j-16-fighter-flew-too-close-to-ph-aircraft-over-bajo-de-masinloc/story/",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-05T05:08:20+09:00"
+        },
+        {
+          "name": "AFP / Arab News：Philippines accuses China of harassing patrols in disputed waters",
+          "url": "https://www.arabnews.pk/world/philippines-accuses-china-of-harassing-patrols-in-disputed-waters-3003148",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-05T05:08:20+09:00"
+        }
+      ],
+      "confidence": "medium",
+      "verification_notes": "ロイター、AFP、Philstar、GMAの個別記事本文を確認。海上の事案は4日、航空機の事案は3日で、いずれも4日に発表された。妨害・危険性の評価はフィリピン当局の説明に基づき、中国側の説明や行動の独立検証ではない。漁船の国籍は確認できていないため記載しない。中国大使館の無回答はロイター配信時点の状況。",
+      "image": {
+        "url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2609/9959694/1000w_q95.jpg",
+        "source_url": "https://www.dvidshub.net/image/9959694/uss-canberra-participates-group-sail-part-jca-philippines",
+        "alt": "南シナ海を航行するフィリピン、インド、日本の艦艇の参考写真",
+        "caption": "南シナ海で共同訓練に参加するフィリピン、インド、日本の艦艇（2026年９月）。今回の事案を撮影したものではない。",
+        "credit": "U.S. Navy / Mass Communication Specialist 1st Class Dakota L. David / DVIDS",
+        "license": "Public domain (U.S. federal government work); individual DVIDS page expressly marked PUBLIC DOMAIN",
+        "license_url": "https://www.dvidshub.net/about/copyright",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-05T05:08:20+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。"
+      }
+    },
+    {
+      "id": "20261005-russia-north-korea-jet-drone-claim",
+      "topic_key": "russia-north-korea-jet-drone-technology-zelensky-oct4-2026",
+      "candidate_slug": "zelensky-russia-north-korea-jet-drone-technology",
+      "headline": "ロシアが北朝鮮にジェット無人機技術を共有か　ゼレンスキー氏が見解",
+      "category": "新技術・兵器開発",
+      "published_date": "2026-10-04",
+      "published_at_jst": "2026-10-05T01:04:00+09:00",
+      "first_seen_at_jst": "2026-10-05T05:06:52+09:00",
+      "last_checked_at_jst": "2026-10-05T05:08:20+09:00",
+      "lead": "ウクライナのゼレンスキー大統領は４日、ロシアが北朝鮮にジェット推進式無人機の技術を共有した可能性があるとの見方を示した。ロイターが記者団への発言を報じた。技術移転の実態が独立に確認されたという発表ではない。",
+      "body_paragraphs": [
+        "同大統領は最新世代のジェット無人機に関する技術共有を問われ、肯定する趣旨の回答をした。その理由として、北朝鮮がロシアにミサイルを提供してきたことを挙げた。一方、弾道ミサイルなどの技術については把握していないとも述べており、共有されたとする具体的な機種、部品、時期は配信記事に示されていない。",
+        "ロイターは、ロシアがここ数週間、対ウクライナ攻撃でジェット無人機の使用を増やしていると伝えた。北朝鮮は砲弾や弾道ミサイルをロシアに供給してきたとされ、韓国や西側諸国は、その見返りとして北朝鮮の兵器開発にロシアが協力する可能性を懸念している。今回の発言は、その軍事技術協力に関するウクライナ側の新たな主張となる。"
+      ],
+      "summary": "ゼレンスキー氏が露朝間のジェット無人機技術共有の可能性を指摘。具体的な機種や移転時期は示されず、独立した確認は取れていない。",
+      "sources": [
+        {
+          "name": "Reuters / AOL：Ukraine believes Russia shared jet-drone technology with North Korea, says Zelenskiy",
+          "url": "https://www.aol.com/articles/ukraine-believes-russia-shared-jet-160245000.html",
+          "published_at_jst": "2026-10-05T01:04:00+09:00",
+          "checked_at_jst": "2026-10-05T05:08:20+09:00"
+        },
+        {
+          "name": "Reuters / Moneycontrol：Ukraine believes Russia shared jet-drone technology with North Korea, says Zelenskyy",
+          "url": "https://www.moneycontrol.com/world/ukraine-believes-russia-shared-jet-drone-technology-with-north-korea-says-zelenskyy-article-14044322.html",
+          "published_at_jst": "2026-10-05T02:31:00+09:00",
+          "checked_at_jst": "2026-10-05T05:08:20+09:00"
+        }
+      ],
+      "confidence": "medium",
+      "verification_notes": "AOLとMoneycontrolで同一のロイター配信本文を確認。両者は独立した二つの裏付けではない。ゼレンスキー氏の見解として報じ、技術移転そのものは未確認。具体的な機種、移転時期、技術的証拠、露朝の反応は配信記事に示されていない。既掲載の北朝鮮ミサイル発射に関する記事とは別の新たな主張。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Vladimir_Putin_and_Kim_Jong-un_%282024-06-19%29_11.jpg",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_and_Kim_Jong-un_(2024-06-19)_11.jpg",
+        "alt": "ロシアと北朝鮮の国旗を背に並ぶプーチン大統領と金正恩氏、2024年の参考写真",
+        "caption": "平壌で会ったプーチン大統領と金正恩氏（2024年６月19日）。今回の技術共有の主張を裏付ける写真ではない。",
+        "credit": "Kremlin.ru / Presidential Executive Office of Russia, CC BY 4.0, via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-05T05:08:20+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。"
+      }
+    },
+    {
+      "id": "2026-10-05-el-alamein-quadrilateral-declaration-20261004",
+      "topic_key": "el-alamein-quadrilateral-declaration-20261004",
+      "candidate_slug": "el-alamein-quadrilateral-declaration-20261004",
+      "headline": "エジプトなど4カ国、紅海航行とソマリア治安支援で共同宣言",
+      "category": "その他",
+      "published_date": "2026-10-04",
+      "published_at_jst": null,
+      "first_seen_at_jst": "2026-10-05T05:04:53+09:00",
+      "last_checked_at_jst": "2026-10-05T05:10:00+09:00",
+      "lead": "エジプト、スーダン、エリトリア、ソマリアの首脳らは10月4日、エジプトのニュー・アラメインで会合を開き、紅海の航行の自由と地域の主権尊重を掲げる共同宣言を発表した。協議結果を継続的に確認する仕組みも設ける。",
+      "body_paragraphs": [
+        "エジプト大統領府が公表した宣言は、紅海の管理は沿岸国の責任だとする立場を示した。ソマリアの対テロ活動を支持し、アフリカ連合の支援・安定化ミッション（AUSSOM）に対し、十分で継続的、かつ見通しの立つ資金を提供するよう域内外の協力国に求めた。ソマリア軍への治安責任の移管を支える狙いがある。",
+        "宣言はスーダンの統一と国家機関を支持し、並立する統治組織や傭兵への支援を拒否する姿勢も示した。4カ国は定期的に、必要に応じても協議する方針だ。ただし、公表文書に共同防衛義務や新たな兵力展開の具体策はなく、今回の合意を軍事同盟の発足や派兵決定と表現する根拠はない。"
+      ],
+      "summary": "4カ国が紅海の航行の自由とAUSSOMへの安定的資金を要求。協議の継続を決めたが、共同防衛や新規派兵の合意は公表されていない。",
+      "sources": [
+        {
+          "name": "Presidency of the Arab Republic of Egypt: El Alamein Joint Declaration",
+          "url": "https://www.presidency.eg/EN/%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B1%D8%A6%D8%A7%D8%B3%D9%8A%D8%A9/news04102026-12/",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-05T05:10:00+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "エジプト大統領府が公表した共同宣言の全文を確認。本文に記された4カ国の政治的立場と協議方針を要約し、軍事同盟、新規派兵、資金拠出の確約は確認されていない。表示は4日19時59分でタイムゾーン明示がないため厳密な公開時刻は未確認。",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/President_Sisi.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "source_url": "https://commons.wikimedia.org/wiki/File%3APresident_Sisi.jpg",
+        "alt": "エジプトのシシ大統領の資料写真",
+        "caption": "エジプトのシシ大統領の資料写真（2014年7月22日）。今回の4カ国会合の写真ではない。",
+        "credit": "U.S. Department of State / Wikimedia Commons (public domain)",
+        "license": "Public domain, U.S. federal government / Department of State employee work",
+        "license_url": "https://commons.wikimedia.org/wiki/File%3APresident_Sisi.jpg#Licensing",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-05T05:10:00+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。"
+      }
+    },
+    {
+      "id": "2026-10-05-bulgaria-emil-drifting-ship",
+      "topic_key": "bulgaria-emil-drifting-ship-20261004",
+      "candidate_slug": "bulgaria-emil-drifting-ship-20261004",
+      "headline": "ブルガリア空海軍、黒海の無人漂流船を確認　航行警報を発出",
+      "category": "海軍",
+      "published_date": "2026-10-04",
+      "published_at_jst": "2026-10-05T01:03:00+09:00",
+      "first_seen_at_jst": "2026-10-05T05:04:53+09:00",
+      "last_checked_at_jst": "2026-10-05T05:05:48+09:00",
+      "lead": "ブルガリア空海軍は4日、乗員が退避したまま黒海を漂流する貨物船「エミル」を確認した。海軍は周辺船舶に航行上の注意を呼びかけている。",
+      "body_paragraphs": [
+        "ブルガリア国防省の説明を伝えたSofia Globeによると、空軍のクーガー輸送ヘリコプター2機と海軍の専門要員が4日、シャブラ岬から東へ約40海里の位置に漂流船を確認した。捜索・確認活動は現地11時30分〜13時10分に実施された。",
+        "同船は8月5日にオデーサ周辺で無人機攻撃を受け、火災と機器故障で航行能力を失い、乗員が退避したとされる。今回新たに報じられたのは船の位置確認と航行警報で、4日に攻撃されたという意味ではない。国防省によると、船は海流でルーマニアの排他的経済水域から南へ移動しており、関係機関が監視を続けている。"
+      ],
+      "summary": "黒海で無人の貨物船が漂流し、ブルガリア軍がヘリ2機で確認。過去の攻撃で航行不能となった船が海上交通の危険になっている。",
+      "sources": [
+        {
+          "name": "The Sofia Globe：ブルガリア国防省発表に基づく漂流船の確認",
+          "url": "https://sofiaglobe.com/2026/10/04/bulgarian-navy-air-force-locate-ship-abandoned-and-adrift-after-drone-hit/",
+          "published_at_jst": "2026-10-05T01:03:00+09:00",
+          "checked_at_jst": "2026-10-05T05:05:48+09:00"
+        },
+        {
+          "name": "Taralej：空海軍によるエミルの捜索と航行警報",
+          "url": "https://taralej.bg/balkani/voenna-operaciq-v-cherno-more-helikopteri-kugar-i-vms-lokaliziraha-izostaven-korab",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-05T05:05:48+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "Sofia Globeの全文をクラウドブラウザで確認し、表示日時属性は2026-10-04T19:03:00+03:00。Taralejの本文とも照合。国防省の発表を伝える報道に基づき、公式原文を直接確認したとは扱わない。新規事象は4日の位置確認・警報で、無人機攻撃自体は8月5日。攻撃主体を推定しない。",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Bulgarian_Air_Force_AS532_Cougar%2C_Hohenfels%2C_March_18%2C_2012_%28120318-A-PU716-003%29.jpg/1280px-Bulgarian_Air_Force_AS532_Cougar%2C_Hohenfels%2C_March_18%2C_2012_%28120318-A-PU716-003%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Bulgarian_Air_Force_AS532_Cougar,_Hohenfels,_March_18,_2012_(120318-A-PU716-003).jpg",
+        "alt": "訓練中のブルガリア空軍AS532クーガー輸送ヘリコプター。2012年3月18日、ドイツでの資料写真で、今回の捜索を写したものではない。",
+        "caption": "ブルガリア空軍のクーガー（2012年3月18日、ドイツ・ホーエンフェルスでの訓練）。今回の捜索ではありません。",
+        "credit": "Spc. Tristan Bolden / U.S. Army / Wikimedia Commons",
+        "license": "Public domain（米国政府）",
+        "license_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-Military",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-05T05:05:48+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。"
+      }
     }
   ],
   "history": [
@@ -1124,6 +1407,21 @@
       "added_count": 4,
       "error": null,
       "notes": "17:00定期枠。05:00〜17:00を中心に検索・本文確認。既掲載の再報道や枠前の単純再掲は除外。印パの外交抗議は3日発生・4日朝報道と明記。Web本文取得失敗はクラウドブラウザで回復し、直接読めなかった一次発表は確認済みとして扱わない。"
+    },
+    {
+      "run_id": "scheduled-20261005-0500-collector-01",
+      "trigger": "scheduled",
+      "status": "OK",
+      "target_slot": "2026-10-05T05:00:00+09:00",
+      "trigger_observed_at": "2026-10-05T05:02:30+09:00",
+      "started_at": "2026-10-05T05:03:05+09:00",
+      "finished_at": "2026-10-05T05:11:37+09:00",
+      "base_commit_sha": "533e7dfdc5b8624e27d3d5468a46f807bbe98d38",
+      "query_count": 88,
+      "query_count_is_minimum": true,
+      "added_count": 6,
+      "error": null,
+      "notes": "5時の定期枠。前日17時〜当日5時を中心に一般報道、公式発表、防衛専門媒体を検索。本文と写真の個別利用条件を確認し、既掲載の単純再掲は除外。日時不明のものは推測せず未確認とした。Web本文取得の一部エラーはクラウドブラウザで本文確認して解消。"
     }
   ]
 }
