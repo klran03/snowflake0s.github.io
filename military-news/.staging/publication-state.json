@@ -1,42 +1,28 @@
 {
   "schema_version": 1,
-  "revision": 9,
+  "revision": 10,
   "last_attempt": {
-    "run_id": "scheduled-20261004-1700-publication-01",
+    "run_id": "scheduled-20261005-0500-publication-01",
     "trigger": "scheduled",
-    "issue_date": "2026-10-04",
-    "edition": "evening",
-    "label": "夕刊",
-    "target_slot": "2026-10-04T17:00:00+09:00",
-    "trigger_observed_at": "2026-10-04T16:59:10+09:00",
-    "candidate_count": 4,
-    "new_count": 4,
-    "article_count": 10,
-    "result": "OK",
+    "issue_date": "2026-10-05",
+    "edition": "morning",
+    "label": "朝刊",
+    "target_slot": "2026-10-05T05:00:00+09:00",
+    "trigger_observed_at": "2026-10-05T05:02:30+09:00",
+    "candidate_count": 6,
+    "new_count": 6,
+    "article_count": 6,
+    "new_badges": 0,
+    "result": "PENDING_VERIFICATION",
     "failed_stage": null,
-    "started_at": "2026-10-04T17:12:20+09:00",
-    "finished_at": "2026-10-04T17:16:00+09:00",
-    "collector_run_id": "scheduled-20261004-1700-collector-01",
-    "collector_finished_at": "2026-10-04T17:11:43+09:00",
+    "started_at": "2026-10-05T05:12:13+09:00",
+    "finished_at": null,
+    "collector_run_id": "scheduled-20261005-0500-collector-01",
+    "collector_finished_at": "2026-10-05T05:11:37+09:00",
+    "collection_status": "OK",
     "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
     "scheduled_trigger_verified": true,
-    "error": null,
-    "publication_commit_sha": "6851d45343eaee2234aba1d52a9a5370b823f460",
-    "pull_request_url": "https://github.com/klran03/snowflake0s.github.io/pull/5",
-    "git_readback_verified": true,
-    "pages_verified": true,
-    "public_http_verified": true,
-    "published_at": "2026-10-04T08:14:04Z",
-    "pages_completed_at": "2026-10-04T08:14:54Z",
-    "verification_started_at": "2026-10-04T17:14:06+09:00",
-    "verification_finished_at": "2026-10-04T17:16:00+09:00",
-    "recovered_errors": [
-      {
-        "stage": "collection",
-        "code": "SOURCE_READER_ERROR",
-        "message": "Web reader errors for selected sources were resolved through body checks in the cloud browser; the unavailable original Telegram post was not represented as directly verified."
-      }
-    ]
+    "error": null
   },
   "latest_verified": {
     "issue_date": "2026-10-04",
@@ -189,6 +175,36 @@
       "id": "2026-10-04-ukraine-night-drone-attack",
       "issue_date": "2026-10-04",
       "article_path": "military-news/articles/2026-10-04/ukraine-night-drone-attack-20261004.html"
+    },
+    {
+      "id": "2026-10-05-germany-ukraine-confirmed-package-20261004",
+      "issue_date": "2026-10-05",
+      "article_path": "military-news/articles/2026-10-05/germany-ukraine-confirmed-package-20261004.html"
+    },
+    {
+      "id": "2026-10-05-yemen-government-offensive-announced-20261004",
+      "issue_date": "2026-10-05",
+      "article_path": "military-news/articles/2026-10-05/yemen-government-offensive-announced-20261004.html"
+    },
+    {
+      "id": "20261005-philippines-china-patrols",
+      "issue_date": "2026-10-05",
+      "article_path": "military-news/articles/2026-10-05/philippines-china-thitu-scarborough-patrols.html"
+    },
+    {
+      "id": "20261005-russia-north-korea-jet-drone-claim",
+      "issue_date": "2026-10-05",
+      "article_path": "military-news/articles/2026-10-05/zelensky-russia-north-korea-jet-drone-technology.html"
+    },
+    {
+      "id": "2026-10-05-el-alamein-quadrilateral-declaration-20261004",
+      "issue_date": "2026-10-05",
+      "article_path": "military-news/articles/2026-10-05/el-alamein-quadrilateral-declaration-20261004.html"
+    },
+    {
+      "id": "2026-10-05-bulgaria-emil-drifting-ship",
+      "issue_date": "2026-10-05",
+      "article_path": "military-news/articles/2026-10-05/bulgaria-emil-drifting-ship-20261004.html"
     }
   ],
   "history": [
@@ -336,6 +352,29 @@
           "message": "Web reader errors for selected sources were resolved through body checks in the cloud browser; the unavailable original Telegram post was not represented as directly verified."
         }
       ]
+    },
+    {
+      "run_id": "scheduled-20261005-0500-publication-01",
+      "trigger": "scheduled",
+      "issue_date": "2026-10-05",
+      "edition": "morning",
+      "label": "朝刊",
+      "target_slot": "2026-10-05T05:00:00+09:00",
+      "trigger_observed_at": "2026-10-05T05:02:30+09:00",
+      "candidate_count": 6,
+      "new_count": 6,
+      "article_count": 6,
+      "new_badges": 0,
+      "result": "PENDING_VERIFICATION",
+      "failed_stage": null,
+      "started_at": "2026-10-05T05:12:13+09:00",
+      "finished_at": null,
+      "collector_run_id": "scheduled-20261005-0500-collector-01",
+      "collector_finished_at": "2026-10-05T05:11:37+09:00",
+      "collection_status": "OK",
+      "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
+      "scheduled_trigger_verified": true,
+      "error": null
     }
   ]
 }
