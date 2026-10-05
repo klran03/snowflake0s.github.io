@@ -1,42 +1,34 @@
 {
   "schema_version": 1,
-  "revision": 11,
+  "revision": 12,
   "last_attempt": {
-    "run_id": "scheduled-20261005-0500-publication-01",
+    "run_id": "scheduled-20261005-1700-publication-01",
     "trigger": "scheduled",
     "issue_date": "2026-10-05",
-    "edition": "morning",
-    "label": "朝刊",
-    "target_slot": "2026-10-05T05:00:00+09:00",
-    "trigger_observed_at": "2026-10-05T05:02:30+09:00",
-    "candidate_count": 6,
-    "new_count": 6,
-    "article_count": 6,
-    "new_badges": 0,
-    "result": "OK",
+    "edition": "evening",
+    "label": "夕刊",
+    "target_slot": "2026-10-05T17:00:00+09:00",
+    "trigger_observed_at": "2026-10-05T17:08:17+09:00",
+    "candidate_count": 5,
+    "new_count": 5,
+    "article_count": 11,
+    "new_badges": 5,
+    "result": "PENDING_VERIFICATION",
     "failed_stage": null,
-    "started_at": "2026-10-05T05:12:13+09:00",
-    "finished_at": "2026-10-05T05:18:03+09:00",
-    "collector_run_id": "scheduled-20261005-0500-collector-01",
-    "collector_finished_at": "2026-10-05T05:11:37+09:00",
+    "started_at": "2026-10-05T18:04:17+09:00",
+    "finished_at": null,
+    "collector_run_id": "scheduled-20261005-1700-collector-01",
+    "collector_finished_at": "2026-10-05T17:22:04+09:00",
     "collection_status": "OK",
     "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
     "scheduled_trigger_verified": true,
     "error": null,
-    "publication_commit_sha": "fc36ee8dbbef7e54487c52b6740e2f56c8fabc9a",
-    "pull_request_url": "https://github.com/klran03/snowflake0s.github.io/pull/6",
-    "git_readback_verified": true,
-    "pages_verified": true,
-    "public_http_verified": true,
-    "published_at": "2026-10-04T20:14:53Z",
-    "pages_completed_at": "2026-10-04T20:15:43Z",
-    "verification_started_at": "2026-10-05T05:14:55+09:00",
-    "verification_finished_at": "2026-10-05T05:18:03+09:00",
+    "collector_commit_sha": "9221110d3e8a4834604f7a45a680bd9d2c6596e8",
     "recovered_errors": [
       {
-        "stage": "collection",
-        "code": "SOURCE_READER_ERROR",
-        "message": "Some web article readers returned Internal Error. Actual article bodies were subsequently read and verified in the cloud browser; unavailable standalone primary statements were not represented as directly verified."
+        "code": "COLLECTOR_SAVE_DENIED",
+        "stage": "collection_commit",
+        "message": "Collector-only master save was initially denied. After specific user approval, guarded Contents API update succeeded and exact-commit readback matched."
       }
     ]
   },
@@ -224,6 +216,31 @@
       "id": "2026-10-05-bulgaria-emil-drifting-ship",
       "issue_date": "2026-10-05",
       "article_path": "military-news/articles/2026-10-05/bulgaria-emil-drifting-ship-20261004.html"
+    },
+    {
+      "id": "2026-10-05-korea-dmz-mine-final-investigation-removal",
+      "issue_date": "2026-10-05",
+      "article_path": "military-news/articles/2026-10-05/korea-dmz-mine-final-investigation-removal-20261005.html"
+    },
+    {
+      "id": "2026-10-05-us-b1-fairford-redeployment",
+      "issue_date": "2026-10-05",
+      "article_path": "military-news/articles/2026-10-05/us-b1-fairford-redeployment-20261005.html"
+    },
+    {
+      "id": "2026-10-05-japan-philippines-doshin-bayanihan-acsa",
+      "issue_date": "2026-10-05",
+      "article_path": "military-news/articles/2026-10-05/japan-philippines-doshin-bayanihan-acsa-20261005.html"
+    },
+    {
+      "id": "2026-10-05-us-caribbean-boat-strike",
+      "issue_date": "2026-10-05",
+      "article_path": "military-news/articles/2026-10-05/us-caribbean-boat-strike-20261004.html"
+    },
+    {
+      "id": "2026-10-05-ukraine-war-financing-gap",
+      "issue_date": "2026-10-05",
+      "article_path": "military-news/articles/2026-10-05/ukraine-war-financing-gap-20261005.html"
     }
   ],
   "history": [
@@ -408,6 +425,37 @@
           "stage": "collection",
           "code": "SOURCE_READER_ERROR",
           "message": "Some web article readers returned Internal Error. Actual article bodies were subsequently read and verified in the cloud browser; unavailable standalone primary statements were not represented as directly verified."
+        }
+      ]
+    },
+    {
+      "run_id": "scheduled-20261005-1700-publication-01",
+      "trigger": "scheduled",
+      "issue_date": "2026-10-05",
+      "edition": "evening",
+      "label": "夕刊",
+      "target_slot": "2026-10-05T17:00:00+09:00",
+      "trigger_observed_at": "2026-10-05T17:08:17+09:00",
+      "candidate_count": 5,
+      "new_count": 5,
+      "article_count": 11,
+      "new_badges": 5,
+      "result": "PENDING_VERIFICATION",
+      "failed_stage": null,
+      "started_at": "2026-10-05T18:04:17+09:00",
+      "finished_at": null,
+      "collector_run_id": "scheduled-20261005-1700-collector-01",
+      "collector_finished_at": "2026-10-05T17:22:04+09:00",
+      "collection_status": "OK",
+      "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
+      "scheduled_trigger_verified": true,
+      "error": null,
+      "collector_commit_sha": "9221110d3e8a4834604f7a45a680bd9d2c6596e8",
+      "recovered_errors": [
+        {
+          "code": "COLLECTOR_SAVE_DENIED",
+          "stage": "collection_commit",
+          "message": "Collector-only master save was initially denied. After specific user approval, guarded Contents API update succeeded and exact-commit readback matched."
         }
       ]
     }
