@@ -1,42 +1,62 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-09-27T18:11:08+09:00",
-  "run_id": "scheduled-20260927-1810-verification-01",
+  "checked_at": "2026-10-05T18:11:42+09:00",
+  "run_id": "scheduled-20261005-1700-verification-01",
   "trigger": "scheduled",
   "expected_slot": {
-    "issue_date": "2026-09-27",
+    "issue_date": "2026-10-05",
     "edition": "evening",
-    "target_time": "2026-09-27T17:00:00+09:00"
+    "target_time": "2026-10-05T17:00:00+09:00"
   },
   "observed_slot": {
-    "issue_date": "2026-09-27",
+    "issue_date": "2026-10-05",
     "edition": "evening",
-    "label": "夕刊・臨時便",
-    "article_count": 12,
+    "label": "夕刊",
+    "article_count": 11,
     "new_count": 5,
+    "new_badges": 5,
     "archive_exists": true,
-    "article_links_checked": 12,
-    "article_links_ok": 12
+    "article_links_checked": 11,
+    "article_links_ok": 11,
+    "past_archives_checked": 38,
+    "past_archives_ok": 38
   },
-  "git_sha": "58dec9c764487ef0678f8a9f22b07d8c23ef6f83",
+  "git_sha": "81090f13ee934eef6c32a56ce5eb8002083de254",
   "collector_status": {
     "status": "OK_FRESH",
-    "last_run_id": "manual-20260927-collector-test-01",
-    "last_run_trigger": "manual",
+    "last_run_id": "scheduled-20261005-1700-collector-01",
+    "last_run_trigger": "scheduled",
     "last_run_status": "OK",
-    "last_successful_collection_at": "2026-09-27T17:24:09.933+09:00",
-    "candidate_count": 6
+    "last_successful_collection_at": "2026-10-05T17:22:04+09:00",
+    "buffer_revision": 7,
+    "new_candidate_count": 5,
+    "candidate_count": 36,
+    "commit_sha": "9221110d3e8a4834604f7a45a680bd9d2c6596e8"
   },
   "pages_status": {
     "status": "SUCCESS",
-    "workflow_run_id": 36307988885,
-    "head_sha": "58dec9c764487ef0678f8a9f22b07d8c23ef6f83",
+    "workflow_run_id": 37288066279,
+    "head_sha": "81090f13ee934eef6c32a56ce5eb8002083de254",
     "conclusion": "success"
   },
   "public_http_status": {
-    "status": "PUBLIC_HTTP_UNVERIFIED",
-    "detail": "公開URLの取得を試みたが、この実行環境のWeb取得ツールではURLへアクセスできなかった。GitHub Pages停止とは判定しない。"
+    "status": "OK",
+    "method": "Actual HTTPS GET with exact HTML/CSS bytes and image decoding",
+    "checked_at": "2026-10-05T09:11:11.478048+00:00",
+    "total_checks": 62,
+    "article_pages": 11,
+    "images": 10,
+    "past_archives": 38,
+    "failures": 0,
+    "browser_rendered_layout_verified": false
   },
   "recovery_result": "NOT_NEEDED",
+  "resolved_errors": [
+    {
+      "code": "COLLECTOR_SAVE_DENIED",
+      "stage": "collection_commit",
+      "detail": "Specific user approval obtained; guarded collector save and readback then succeeded."
+    }
+  ],
   "error": null
 }
