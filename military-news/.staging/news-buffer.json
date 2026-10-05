@@ -1,69 +1,254 @@
 {
   "schema_version": 1,
-  "revision": 7,
+  "revision": 8,
   "initialized_at": "2026-09-27T17:12:19+09:00",
-  "updated_at": "2026-10-05T17:22:04+09:00",
+  "updated_at": "2026-10-06T05:08:22+09:00",
   "last_run": {
-    "run_id": "scheduled-20261005-1700-collector-01",
+    "run_id": "scheduled-20261006-0500-collector-01",
     "trigger": "scheduled",
     "status": "OK",
-    "target_slot": "2026-10-05T17:00:00+09:00",
-    "trigger_observed_at": "2026-10-05T17:08:17+09:00",
-    "started_at": "2026-10-05T17:09:06+09:00",
-    "finished_at": "2026-10-05T17:22:04+09:00",
-    "base_commit_sha": "39fe643e4c470fb818a729930bc4552061bd8b2e",
+    "target_slot": "2026-10-06T05:00:00+09:00",
+    "trigger_observed_at": "2026-10-06T04:59:05+09:00",
+    "started_at": "2026-10-06T04:59:29+09:00",
+    "finished_at": "2026-10-06T05:08:22+09:00",
+    "base_commit_sha": "3cee2405c644f4e83a6d0fda369576848f15c837",
     "query_count": 72,
     "query_count_is_minimum": true,
-    "added_count": 5,
+    "added_count": 6,
     "error": null,
     "source_errors": [
       {
-        "code": "SOURCE_READER_ERROR",
         "stage": "source_body",
-        "message": "web.open returned Internal Error for Asia News Network, Asian Military Review, Aju Press, EDaily, and Bombo Radyo. Eligible article bodies were subsequently read through ordinary HTTP 200 or alternative sources; no cloud browser tools used."
+        "code": "WEB_READER_INTERNAL_ERROR",
+        "detail": "Several web.open requests returned Internal Error; corresponding selected-source bodies were read using ordinary HTTP 200 without browser use."
       },
       {
-        "code": "HTTP_403",
         "stage": "source_body",
-        "message": "Ordinary HTTP returned 403 for Asia News Network drill article, Asian Military Review Taiwan article, JASDF English homepage, and two Commons description pages. No retry of the rejected HTTP destinations. The publication candidates rely on individually verified accessible sources."
-      },
-      {
         "code": "HTTP_403",
-        "stage": "image",
-        "message": "Wikimedia KPA3-2a.jpg ordinary HTTP returned 403. This image was not selected. Both selected DVIDS images returned HTTP 200 and were visually checked."
+        "url": "https://www.newkerala.com/news/a/india-uae-reinforce-growing-defence-partnership-exercise-mountain-746.htm",
+        "detail": "403; no retry or bypass. Not used as source."
       },
       {
-        "stage": "source_reader",
-        "code": "SOURCE_READER_ERROR",
-        "message": "web.open returned Internal Error for several candidate articles. The selected AOL, ABC and Internazionale article bodies were subsequently fully read through ordinary public HTTPS, HTTP 200.",
-        "resolved": true
-      },
-      {
-        "stage": "unused_sources",
+        "stage": "source_body",
         "code": "HTTP_403",
-        "message": "UPI and Sight Magazine direct public HTTP returned 403; not retried through alternate access routes. Equivalent reporting was independently read from AP/ABC and Reuters/Internazionale, neither of which denied access.",
-        "resolved": true
+        "url": "https://sam.directory/opportunities/project-iron-sentry-kto-joint-point-defense-modernization-f3j6af-27-ss001",
+        "detail": "403; no retry or bypass. Search result was discovery only, not cited as body-verified source."
       },
       {
-        "stage": "photo",
-        "code": "PHOTO_FETCH_BLOCKED",
-        "message": "Commons parliament image and U.S. government aid-ammunition image could not be fetched (HTTP 403). Ukraine finance candidate uses image:null. No cloud browser or user desktop was called.",
-        "resolved": false
+        "stage": "source_body",
+        "code": "CLIENT_RENDERED_SHELL",
+        "url": "https://sam.gov/workspace/contract/opp/6fddf65dbc074a86ac6543ad7cec45e9/view",
+        "detail": "Ordinary HTTP returned 200 but only client-rendered shell; no original RFI-body verification claimed. DefenseScoop body and exact publication metadata read instead."
       },
       {
-        "stage": "collection",
-        "code": "SOURCE_READER_ERROR",
-        "message": "Some article web.open requests returned Internal Error. The selected B-1 article body was successfully read through Internazionale; no cloud browser was used."
+        "topic": "Hormuz incident",
+        "error": "Seatrade full article returned Internal Error via web open; ordinary HTTPS GET returned 403. UKMTO dynamic list open rendered no incident text. Search text is insufficient for publication; excluded."
+      },
+      {
+        "topic": "Geran-4 modification",
+        "error": "HUR/War&Sanctions and Militarnyi exact pages failed body opens. Search body text only; excluded."
+      },
+      {
+        "topic": "Wikimedia photo assets",
+        "error": "Rights pages readable, but image download/visual inspection unavailable; not selected."
       }
     ],
-    "notes": "17時の定期夕刊枠。5時〜17時を中心に新規発表・続報を検索し、本文を確認した5件を採用。既掲載の単純再掲は除外。本文取得できない媒体は採用せず、公開時刻不明はnullを維持。写真は4件で実体と利用条件を確認し、財政記事は利用可能な画像を取得できず写真なし。クラウドブラウザーは使用していない。"
+    "notes": "前日17時〜当日5時を中心に検索し、本文確認と既掲載照合を済ませた新規情報を採用。取得不能な本文は未確認扱いとし採用しない。公開時刻不明はnull、写真は権利・クレジットを明示。"
   },
-  "last_successful_collection_at": "2026-10-05T17:22:04+09:00",
+  "last_successful_collection_at": "2026-10-06T05:08:22+09:00",
   "coverage": {
-    "from_jst": "2026-10-05T05:00:00+09:00",
-    "through_jst": "2026-10-05T17:00:00+09:00",
+    "from_jst": "2026-10-05T17:00:00+09:00",
+    "through_jst": "2026-10-06T05:00:00+09:00",
     "completed": true
   },
+  "history": [
+    {
+      "run_id": "manual-20260927-collector-test-01",
+      "trigger": "manual",
+      "status": "OK",
+      "started_at": "2026-09-27T17:21:00+09:00",
+      "finished_at": "2026-09-27T17:24:09.933+09:00",
+      "base_commit_sha": "400d485b54e46c333846e11ac2e7f6ee016190c0",
+      "query_count": 42,
+      "added_count": 6,
+      "error": null
+    },
+    {
+      "run_id": "manual-20261003-special-collector-01",
+      "trigger": "manual",
+      "status": "OK",
+      "started_at": "2026-10-03T15:58:24+09:00",
+      "finished_at": "2026-10-03T16:09:27+09:00",
+      "base_commit_sha": "f9445096b50686aa53d74bddc2ee2935269373ec",
+      "query_count": 35,
+      "added_count": 6,
+      "error": null
+    },
+    {
+      "run_id": "scheduled-20261003-1700-collector-01",
+      "trigger": "scheduled",
+      "status": "OK",
+      "target_slot": "2026-10-03T17:00:00+09:00",
+      "started_at": "2026-10-03T16:57:58+09:00",
+      "finished_at": "2026-10-03T17:06:45+09:00",
+      "base_commit_sha": "eb4c0896010d9cee9eb0bac115460f38a85665fa",
+      "query_count": 34,
+      "added_count": 3,
+      "error": null,
+      "notes": "定期起動を受けて収集。前回臨時更新に未掲載の当日ニュースを追加。既掲載6件の重複追加はなし。"
+    },
+    {
+      "run_id": "scheduled-20261004-0500-collector-01",
+      "trigger": "scheduled",
+      "status": "OK",
+      "target_slot": "2026-10-04T05:00:00+09:00",
+      "trigger_observed_at": "2026-10-04T04:57:45+09:00",
+      "started_at": "2026-10-04T04:58:24+09:00",
+      "finished_at": "2026-10-04T05:09:23+09:00",
+      "base_commit_sha": "8cfa64ed30a9795d255d66f5a85495d50beb06e2",
+      "query_count": 42,
+      "query_count_is_minimum": true,
+      "added_count": 6,
+      "error": null,
+      "notes": "05:00定期枠。早期起動後に収集を準備し、05:00以降に確定。前日17:00〜当日05:00を中心に検索。公開時刻不明の記事と枠前の出来事は本文に明記。既掲載記事の単純再掲なし。"
+    },
+    {
+      "run_id": "scheduled-20261004-1700-collector-01",
+      "trigger": "scheduled",
+      "status": "OK",
+      "target_slot": "2026-10-04T17:00:00+09:00",
+      "trigger_observed_at": "2026-10-04T16:59:10+09:00",
+      "started_at": "2026-10-04T17:01:26+09:00",
+      "finished_at": "2026-10-04T17:11:43+09:00",
+      "base_commit_sha": "5f80020c74b5d7908b1047fe323db8d292a811d6",
+      "query_count": 60,
+      "added_count": 4,
+      "error": null,
+      "notes": "17:00定期枠。05:00〜17:00を中心に検索・本文確認。既掲載の再報道や枠前の単純再掲は除外。印パの外交抗議は3日発生・4日朝報道と明記。Web本文取得失敗はクラウドブラウザで回復し、直接読めなかった一次発表は確認済みとして扱わない。"
+    },
+    {
+      "run_id": "scheduled-20261005-0500-collector-01",
+      "trigger": "scheduled",
+      "status": "OK",
+      "target_slot": "2026-10-05T05:00:00+09:00",
+      "trigger_observed_at": "2026-10-05T05:02:30+09:00",
+      "started_at": "2026-10-05T05:03:05+09:00",
+      "finished_at": "2026-10-05T05:11:37+09:00",
+      "base_commit_sha": "533e7dfdc5b8624e27d3d5468a46f807bbe98d38",
+      "query_count": 88,
+      "query_count_is_minimum": true,
+      "added_count": 6,
+      "error": null,
+      "notes": "5時の定期枠。前日17時〜当日5時を中心に一般報道、公式発表、防衛専門媒体を検索。本文と写真の個別利用条件を確認し、既掲載の単純再掲は除外。日時不明のものは推測せず未確認とした。Web本文取得の一部エラーはクラウドブラウザで本文確認して解消。"
+    },
+    {
+      "run_id": "scheduled-20261005-1700-collector-01",
+      "trigger": "scheduled",
+      "status": "OK",
+      "target_slot": "2026-10-05T17:00:00+09:00",
+      "trigger_observed_at": "2026-10-05T17:08:17+09:00",
+      "started_at": "2026-10-05T17:09:06+09:00",
+      "finished_at": "2026-10-05T17:22:04+09:00",
+      "base_commit_sha": "39fe643e4c470fb818a729930bc4552061bd8b2e",
+      "query_count": 72,
+      "query_count_is_minimum": true,
+      "added_count": 5,
+      "error": null,
+      "source_errors": [
+        {
+          "code": "SOURCE_READER_ERROR",
+          "stage": "source_body",
+          "message": "web.open returned Internal Error for Asia News Network, Asian Military Review, Aju Press, EDaily, and Bombo Radyo. Eligible article bodies were subsequently read through ordinary HTTP 200 or alternative sources; no cloud browser tools used."
+        },
+        {
+          "code": "HTTP_403",
+          "stage": "source_body",
+          "message": "Ordinary HTTP returned 403 for Asia News Network drill article, Asian Military Review Taiwan article, JASDF English homepage, and two Commons description pages. No retry of the rejected HTTP destinations. The publication candidates rely on individually verified accessible sources."
+        },
+        {
+          "code": "HTTP_403",
+          "stage": "image",
+          "message": "Wikimedia KPA3-2a.jpg ordinary HTTP returned 403. This image was not selected. Both selected DVIDS images returned HTTP 200 and were visually checked."
+        },
+        {
+          "stage": "source_reader",
+          "code": "SOURCE_READER_ERROR",
+          "message": "web.open returned Internal Error for several candidate articles. The selected AOL, ABC and Internazionale article bodies were subsequently fully read through ordinary public HTTPS, HTTP 200.",
+          "resolved": true
+        },
+        {
+          "stage": "unused_sources",
+          "code": "HTTP_403",
+          "message": "UPI and Sight Magazine direct public HTTP returned 403; not retried through alternate access routes. Equivalent reporting was independently read from AP/ABC and Reuters/Internazionale, neither of which denied access.",
+          "resolved": true
+        },
+        {
+          "stage": "photo",
+          "code": "PHOTO_FETCH_BLOCKED",
+          "message": "Commons parliament image and U.S. government aid-ammunition image could not be fetched (HTTP 403). Ukraine finance candidate uses image:null. No cloud browser or user desktop was called.",
+          "resolved": false
+        },
+        {
+          "stage": "collection",
+          "code": "SOURCE_READER_ERROR",
+          "message": "Some article web.open requests returned Internal Error. The selected B-1 article body was successfully read through Internazionale; no cloud browser was used."
+        }
+      ],
+      "notes": "17時の定期夕刊枠。5時〜17時を中心に新規発表・続報を検索し、本文を確認した5件を採用。既掲載の単純再掲は除外。本文取得できない媒体は採用せず、公開時刻不明はnullを維持。写真は4件で実体と利用条件を確認し、財政記事は利用可能な画像を取得できず写真なし。クラウドブラウザーは使用していない。"
+    },
+    {
+      "run_id": "scheduled-20261006-0500-collector-01",
+      "trigger": "scheduled",
+      "status": "OK",
+      "target_slot": "2026-10-06T05:00:00+09:00",
+      "trigger_observed_at": "2026-10-06T04:59:05+09:00",
+      "started_at": "2026-10-06T04:59:29+09:00",
+      "finished_at": "2026-10-06T05:08:22+09:00",
+      "base_commit_sha": "3cee2405c644f4e83a6d0fda369576848f15c837",
+      "query_count": 72,
+      "query_count_is_minimum": true,
+      "added_count": 6,
+      "error": null,
+      "source_errors": [
+        {
+          "stage": "source_body",
+          "code": "WEB_READER_INTERNAL_ERROR",
+          "detail": "Several web.open requests returned Internal Error; corresponding selected-source bodies were read using ordinary HTTP 200 without browser use."
+        },
+        {
+          "stage": "source_body",
+          "code": "HTTP_403",
+          "url": "https://www.newkerala.com/news/a/india-uae-reinforce-growing-defence-partnership-exercise-mountain-746.htm",
+          "detail": "403; no retry or bypass. Not used as source."
+        },
+        {
+          "stage": "source_body",
+          "code": "HTTP_403",
+          "url": "https://sam.directory/opportunities/project-iron-sentry-kto-joint-point-defense-modernization-f3j6af-27-ss001",
+          "detail": "403; no retry or bypass. Search result was discovery only, not cited as body-verified source."
+        },
+        {
+          "stage": "source_body",
+          "code": "CLIENT_RENDERED_SHELL",
+          "url": "https://sam.gov/workspace/contract/opp/6fddf65dbc074a86ac6543ad7cec45e9/view",
+          "detail": "Ordinary HTTP returned 200 but only client-rendered shell; no original RFI-body verification claimed. DefenseScoop body and exact publication metadata read instead."
+        },
+        {
+          "topic": "Hormuz incident",
+          "error": "Seatrade full article returned Internal Error via web open; ordinary HTTPS GET returned 403. UKMTO dynamic list open rendered no incident text. Search text is insufficient for publication; excluded."
+        },
+        {
+          "topic": "Geran-4 modification",
+          "error": "HUR/War&Sanctions and Militarnyi exact pages failed body opens. Search body text only; excluded."
+        },
+        {
+          "topic": "Wikimedia photo assets",
+          "error": "Rights pages readable, but image download/visual inspection unavailable; not selected."
+        }
+      ],
+      "notes": "前日17時〜当日5時を中心に検索し、本文確認と既掲載照合を済ませた新規情報を採用。取得不能な本文は未確認扱いとし採用しない。公開時刻不明はnull、写真は権利・クレジットを明示。"
+    }
+  ],
   "candidates": [
     {
       "id": "2026-09-27-china-scarborough-joint-exercise",
@@ -1594,142 +1779,255 @@
       "confidence": "high",
       "verification_notes": "ReutersのOlena Harmash記者による特集本文をAOLの公開HTML（HTTP 200）から最後の署名・編集者表記まで確認。HTMLのdatePublishedは2026-10-05T06:01:55+00:00、dateModifiedは06:03:11+00:00。資金不足や戦費は記事の取材先・政府説明に基づく数値で、本紙独自監査ではない。朝刊のドイツ個別支援とは異なる、新規のウクライナ財政報道。Wikimediaの議会写真はCC BY-SA 4.0条件を確認したが画像実体取得がHTTP 403。米政府の過去の支援弾薬写真も画像取得がHTTP 403となり採用を見送った。生成画像は不使用。",
       "image": null
-    }
-  ],
-  "history": [
-    {
-      "run_id": "manual-20260927-collector-test-01",
-      "trigger": "manual",
-      "status": "OK",
-      "started_at": "2026-09-27T17:21:00+09:00",
-      "finished_at": "2026-09-27T17:24:09.933+09:00",
-      "base_commit_sha": "400d485b54e46c333846e11ac2e7f6ee016190c0",
-      "query_count": 42,
-      "added_count": 6,
-      "error": null
     },
     {
-      "run_id": "manual-20261003-special-collector-01",
-      "trigger": "manual",
-      "status": "OK",
-      "started_at": "2026-10-03T15:58:24+09:00",
-      "finished_at": "2026-10-03T16:09:27+09:00",
-      "base_commit_sha": "f9445096b50686aa53d74bddc2ee2935269373ec",
-      "query_count": 35,
-      "added_count": 6,
-      "error": null
-    },
-    {
-      "run_id": "scheduled-20261003-1700-collector-01",
-      "trigger": "scheduled",
-      "status": "OK",
-      "target_slot": "2026-10-03T17:00:00+09:00",
-      "started_at": "2026-10-03T16:57:58+09:00",
-      "finished_at": "2026-10-03T17:06:45+09:00",
-      "base_commit_sha": "eb4c0896010d9cee9eb0bac115460f38a85665fa",
-      "query_count": 34,
-      "added_count": 3,
-      "error": null,
-      "notes": "定期起動を受けて収集。前回臨時更新に未掲載の当日ニュースを追加。既掲載6件の重複追加はなし。"
-    },
-    {
-      "run_id": "scheduled-20261004-0500-collector-01",
-      "trigger": "scheduled",
-      "status": "OK",
-      "target_slot": "2026-10-04T05:00:00+09:00",
-      "trigger_observed_at": "2026-10-04T04:57:45+09:00",
-      "started_at": "2026-10-04T04:58:24+09:00",
-      "finished_at": "2026-10-04T05:09:23+09:00",
-      "base_commit_sha": "8cfa64ed30a9795d255d66f5a85495d50beb06e2",
-      "query_count": 42,
-      "query_count_is_minimum": true,
-      "added_count": 6,
-      "error": null,
-      "notes": "05:00定期枠。早期起動後に収集を準備し、05:00以降に確定。前日17:00〜当日05:00を中心に検索。公開時刻不明の記事と枠前の出来事は本文に明記。既掲載記事の単純再掲なし。"
-    },
-    {
-      "run_id": "scheduled-20261004-1700-collector-01",
-      "trigger": "scheduled",
-      "status": "OK",
-      "target_slot": "2026-10-04T17:00:00+09:00",
-      "trigger_observed_at": "2026-10-04T16:59:10+09:00",
-      "started_at": "2026-10-04T17:01:26+09:00",
-      "finished_at": "2026-10-04T17:11:43+09:00",
-      "base_commit_sha": "5f80020c74b5d7908b1047fe323db8d292a811d6",
-      "query_count": 60,
-      "added_count": 4,
-      "error": null,
-      "notes": "17:00定期枠。05:00〜17:00を中心に検索・本文確認。既掲載の再報道や枠前の単純再掲は除外。印パの外交抗議は3日発生・4日朝報道と明記。Web本文取得失敗はクラウドブラウザで回復し、直接読めなかった一次発表は確認済みとして扱わない。"
-    },
-    {
-      "run_id": "scheduled-20261005-0500-collector-01",
-      "trigger": "scheduled",
-      "status": "OK",
-      "target_slot": "2026-10-05T05:00:00+09:00",
-      "trigger_observed_at": "2026-10-05T05:02:30+09:00",
-      "started_at": "2026-10-05T05:03:05+09:00",
-      "finished_at": "2026-10-05T05:11:37+09:00",
-      "base_commit_sha": "533e7dfdc5b8624e27d3d5468a46f807bbe98d38",
-      "query_count": 88,
-      "query_count_is_minimum": true,
-      "added_count": 6,
-      "error": null,
-      "notes": "5時の定期枠。前日17時〜当日5時を中心に一般報道、公式発表、防衛専門媒体を検索。本文と写真の個別利用条件を確認し、既掲載の単純再掲は除外。日時不明のものは推測せず未確認とした。Web本文取得の一部エラーはクラウドブラウザで本文確認して解消。"
-    },
-    {
-      "run_id": "scheduled-20261005-1700-collector-01",
-      "trigger": "scheduled",
-      "status": "OK",
-      "target_slot": "2026-10-05T17:00:00+09:00",
-      "trigger_observed_at": "2026-10-05T17:08:17+09:00",
-      "started_at": "2026-10-05T17:09:06+09:00",
-      "finished_at": "2026-10-05T17:22:04+09:00",
-      "base_commit_sha": "39fe643e4c470fb818a729930bc4552061bd8b2e",
-      "query_count": 72,
-      "query_count_is_minimum": true,
-      "added_count": 5,
-      "error": null,
-      "source_errors": [
+      "id": "2026-10-06-india-uae-mountain-guardian-2026-begins",
+      "topic_key": "india-uae-mountain-guardian-2026-begins",
+      "candidate_slug": "india-uae-mountain-guardian-2026-begins-20261005",
+      "headline": "インド・UAEが山岳戦訓練を開始　「マウンテン・ガーディアン」に92人",
+      "category": "陸軍",
+      "published_date": "2026-10-05",
+      "published_at_jst": "2026-10-05T19:20:00+09:00",
+      "first_seen_at_jst": "2026-10-06T05:00:57+09:00",
+      "last_checked_at_jst": "2026-10-06T05:05:39+09:00",
+      "lead": "インド国防省は5日、アラブ首長国連邦（UAE）との共同演習「マウンテン・ガーディアン2026」が、北部ウッタラカンド州チャウバティアで始まったと発表しました。18日まで、山岳地形での作戦を中心に訓練します。",
+      "body_paragraphs": [
+        "両陸軍は46人ずつ、計92人を派遣しました。インド側はバイラブ大隊、UAE側は山岳歩兵大隊の隊員が参加し、両国の女性将校や兵士も専門分野の任務を担います。",
+        "訓練項目には共同計画、戦術行動、射撃、監視網の構築、無人機の運用、登攀、総合野外演習が含まれます。インド国防省は、厳しい山岳環境に対応する手順や経験を共有し、両軍が連携して活動する能力を高めるとしています。"
+      ],
+      "summary": "印UAE両陸軍が5～18日に山岳戦の共同訓練。各46人が参加し、無人機運用や監視、登攀などを実施します。",
+      "sources": [
         {
-          "code": "SOURCE_READER_ERROR",
-          "stage": "source_body",
-          "message": "web.open returned Internal Error for Asia News Network, Asian Military Review, Aju Press, EDaily, and Bombo Radyo. Eligible article bodies were subsequently read through ordinary HTTP 200 or alternative sources; no cloud browser tools used."
-        },
-        {
-          "code": "HTTP_403",
-          "stage": "source_body",
-          "message": "Ordinary HTTP returned 403 for Asia News Network drill article, Asian Military Review Taiwan article, JASDF English homepage, and two Commons description pages. No retry of the rejected HTTP destinations. The publication candidates rely on individually verified accessible sources."
-        },
-        {
-          "code": "HTTP_403",
-          "stage": "image",
-          "message": "Wikimedia KPA3-2a.jpg ordinary HTTP returned 403. This image was not selected. Both selected DVIDS images returned HTTP 200 and were visually checked."
-        },
-        {
-          "stage": "source_reader",
-          "code": "SOURCE_READER_ERROR",
-          "message": "web.open returned Internal Error for several candidate articles. The selected AOL, ABC and Internazionale article bodies were subsequently fully read through ordinary public HTTPS, HTTP 200.",
-          "resolved": true
-        },
-        {
-          "stage": "unused_sources",
-          "code": "HTTP_403",
-          "message": "UPI and Sight Magazine direct public HTTP returned 403; not retried through alternate access routes. Equivalent reporting was independently read from AP/ABC and Reuters/Internazionale, neither of which denied access.",
-          "resolved": true
-        },
-        {
-          "stage": "photo",
-          "code": "PHOTO_FETCH_BLOCKED",
-          "message": "Commons parliament image and U.S. government aid-ammunition image could not be fetched (HTTP 403). Ukraine finance candidate uses image:null. No cloud browser or user desktop was called.",
-          "resolved": false
-        },
-        {
-          "stage": "collection",
-          "code": "SOURCE_READER_ERROR",
-          "message": "Some article web.open requests returned Internal Error. The selected B-1 article body was successfully read through Internazionale; no cloud browser was used."
+          "name": "インド国防省 / PIB",
+          "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2319135&lang=1&reg=3",
+          "published_at_jst": "2026-10-05T19:20:00+09:00",
+          "checked_at_jst": "2026-10-06T05:05:39+09:00"
         }
       ],
-      "notes": "17時の定期夕刊枠。5時〜17時を中心に新規発表・続報を検索し、本文を確認した5件を採用。既掲載の単純再掲は除外。本文取得できない媒体は採用せず、公開時刻不明はnullを維持。写真は4件で実体と利用条件を確認し、財政記事は利用可能な画像を取得できず写真なし。クラウドブラウザーは使用していない。"
+      "confidence": "high",
+      "verification_notes": "10月5日付のインド国防省発表に基づく。訓練は開始済みですが、列挙した個々の項目は期間中の実施予定です。写真は当該演習について同省が公表したものです。",
+      "image": {
+        "url": "https://static.pib.gov.in/WriteReadData/userfiles/image/2026/oct/MG1_20261005155142_8288bd.jpeg",
+        "source_url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2319135&lang=1&reg=3",
+        "alt": "共同演習マウンテン・ガーディアンの看板前に並ぶインドとUAEの女性軍人",
+        "caption": "インドとUAEの演習参加者。インド国防省が2026年10月5日の発表に添付した写真。",
+        "credit": "インド国防省 / Press Information Bureau",
+        "license": "PIB Copyright Policyに基づき出典明記のうえ転載可",
+        "license_url": "https://www.pib.gov.in/content/3604_2_CopyrightPolicy.aspx?lang=1&reg=3",
+        "is_reference": false,
+        "checked_at_jst": "2026-10-06T05:05:39+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。"
+      }
+    },
+    {
+      "id": "2026-10-06-seventh-air-force-iron-sentry-counter-uas-rfi",
+      "topic_key": "seventh-air-force-iron-sentry-counter-uas-rfi",
+      "candidate_slug": "seventh-air-force-iron-sentry-counter-uas-rfi-20261005",
+      "headline": "在韓米第7空軍、対無人機装備の情報募集　拠点防空の近代化へ",
+      "category": "新技術・兵器開発",
+      "published_date": "2026-10-05",
+      "published_at_jst": "2026-10-06T02:25:32+09:00",
+      "first_seen_at_jst": "2026-10-06T05:00:37+09:00",
+      "last_checked_at_jst": "2026-10-06T05:05:39+09:00",
+      "lead": "米第7空軍が、韓国での拠点防空を強化する「プロジェクト・アイアン・セントリー」に向け、対無人機能力に関する情報提供依頼（RFI）を5日に公表しました。米防衛専門メディアDefenseScoopが報じました。",
+      "body_paragraphs": [
+        "同紙によると、募集対象は実戦での実績を持ち、朝鮮半島の作戦地域で活用できる対小型無人機・対無人機システムです。新技術の調達・配備を早める米国防当局のAPFIT制度の対象となる企業などから情報を集めます。",
+        "第7空軍は韓国・烏山空軍基地に司令部を置きます。今回のRFIは、装備市場や利用可能な能力を調べるための手続きであり、特定製品の採用や購入契約、配備の開始を発表したものではありません。"
+      ],
+      "summary": "在韓米第7空軍が拠点防空向けの対無人機能力を調査。10月5日公表のRFIで、APFIT対象の実績ある技術を募ります。",
+      "sources": [
+        {
+          "name": "DefenseScoop",
+          "url": "https://defensescoop.com/2026/10/05/air-force-counter-drone-point-defense-modernization-south-korea/",
+          "published_at_jst": "2026-10-06T02:25:32+09:00",
+          "checked_at_jst": "2026-10-06T05:05:39+09:00"
+        }
+      ],
+      "confidence": "medium",
+      "verification_notes": "新情報は10月5日のRFI公表です。本文はDefenseScoopの報道に基づき、原公告の本文は直接確認できていません。調達先、価格、配備時期は断定しません。写真は米国での別の訓練を写した参考写真です。",
+      "image": {
+        "url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2605/9715930/1000w_q95.jpg",
+        "source_url": "https://www.dvidshub.net/image/9715930/afgsc-jiatf-401-conduct-multi-command-c-suas-qualification-camp-guernsey",
+        "alt": "参考写真：対無人機訓練でドローンを飛ばす米空軍兵士。2026年5月、米ワイオミング州",
+        "caption": "2026年5月15日、米ワイオミング州キャンプ・ガーンジーの対無人機訓練。韓国での配備や今回の計画を撮影したものではない。",
+        "credit": "U.S. Air Force / Staff Sgt. Michael A. Richmond / DVIDS",
+        "license": "Public domain（米国政府著作物、DVIDS個別ページで確認）",
+        "license_url": "https://www.dvidshub.net/about/copyright",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-06T05:05:39+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+        "non_endorsement_disclaimer": "The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement."
+      }
+    },
+    {
+      "id": "2026-10-06-india-fleet-support-ship-first-launch-announcement",
+      "topic_key": "india-fleet-support-ship-first-launch-announcement",
+      "candidate_slug": "india-fleet-support-ship-first-launch-announcement-20261005",
+      "headline": "インド、新型艦隊補給艦の1番艦を6日に進水へ　大型艦建造設備も拡張",
+      "category": "海軍",
+      "published_date": "2026-10-05",
+      "published_at_jst": "2026-10-05T19:40:00+09:00",
+      "first_seen_at_jst": "2026-10-06T05:01:47+09:00",
+      "last_checked_at_jst": "2026-10-06T05:05:39+09:00",
+      "lead": "インド国防省は5日、新型艦隊補給艦の1番艦「FSS-1」を6日にビシャカパトナムのヒンドゥスタン造船所で進水させると発表しました。同時に5番艦の起工式と、造船設備の供用開始を予定しています。",
+      "body_paragraphs": [
+        "FSS-1はインド海軍向けに建造する5隻の最初の艦です。国防省によると、4万3500トンの艦隊補給艦は洋上で艦艇へ補給し、インド洋での長期間の活動を支えます。今回の進水は鋼材切断から18カ月後に当たるとしています。",
+        "延長・強化した第4船台と300トン級ゴライアスクレーンも披露する予定です。造船所は最大4万5000載貨重量トン（DWT）の船舶を建造・進水できるようになると国防省は説明しています。進水や設備の供用が完了したとの発表ではありません。"
+      ],
+      "summary": "インドが新型補給艦FSS-1の6日進水予定を発表。5番艦の起工と、大型船の建造能力を高める設備の供用も予定します。",
+      "sources": [
+        {
+          "name": "インド国防省 / PIB",
+          "url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2319156&lang=1&reg=3",
+          "published_at_jst": "2026-10-05T19:40:00+09:00",
+          "checked_at_jst": "2026-10-06T05:05:39+09:00"
+        },
+        {
+          "name": "DD India",
+          "url": "https://ddindia.co.in/2026/10/rajnath-singh-to-launch-navys-first-fleet-support-ship-in-visakhapatnam-on-october-6/",
+          "published_at_jst": "2026-10-05T20:13:00+09:00",
+          "checked_at_jst": "2026-10-06T05:05:39+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "10月5日の公式予定発表を扱います。進水予定日はインド現地の10月6日で、実施済みとは記述していません。艦の4万3500トンと設備能力の4万5000DWTは異なる指標として区別しました。写真のシャクティは既存の補給艦で、FSS-1ではありません。",
+      "image": {
+        "url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2011/6414149/1000w_q95.jpg",
+        "source_url": "https://www.dvidshub.net/image/6414149/mccain-conducts-ras-with-ins-shakti-hmas-ballarat-during-malabar-2020",
+        "alt": "参考写真：インド海軍補給艦シャクティから豪海軍フリゲートへの洋上補給。2020年撮影",
+        "caption": "2020年11月4日、演習マラバールで豪海軍艦バララット（右）に補給するインド海軍艦シャクティ。新型FSS-1とは別の艦。",
+        "credit": "U.S. Navy / Mass Communication Specialist 2nd Class Markus Castaneda / DVIDS",
+        "license": "Public domain（米国政府著作物、DVIDS個別ページで確認）",
+        "license_url": "https://www.dvidshub.net/about/copyright",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-06T05:05:39+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+        "non_endorsement_disclaimer": "The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement."
+      }
+    },
+    {
+      "id": "2026-10-06-ukraine-france-rafale-training",
+      "topic_key": "ukraine-france-rafale-training-20261005",
+      "candidate_slug": "ukraine-france-rafale-training-20261005",
+      "headline": "ウクライナ操縦士、仏ラファールの訓練を近く開始へ　両首脳が防衛協力を協議",
+      "category": "空軍",
+      "published_date": "2026-10-05",
+      "published_at_jst": null,
+      "first_seen_at_jst": "2026-10-06T05:03:04+09:00",
+      "last_checked_at_jst": "2026-10-06T05:07:52+09:00",
+      "lead": "ウクライナ大統領府は5日、ゼレンスキー大統領とフランスのマクロン大統領が電話会談し、ウクライナの操縦士によるラファール戦闘機の訓練をフランスで近く始める方針を協議したと発表しました。",
+      "body_paragraphs": [
+        "ウクライナ側の発表によると、会談では追加の防衛支援も議題となりました。ゼレンスキー氏は、新たな装備の輸送が準備されており、支援パッケージの早期到着を見込むと説明しました。発表にはラファール訓練の具体的な開始日、参加人数や機体の引き渡し時期は示されていません。",
+        "両首脳は、フランス製ミサイルと航空爆弾のウクライナ国内生産に向けた作業や、対弾道ミサイル計画「FREYJA」についても協議しました。訓練の準備と並行して防衛産業協力を進める内容ですが、今回の発表が新たな航空機の納入完了を意味するわけではありません。"
+      ],
+      "summary": "ラファール訓練の早期開始をウクライナ側が発表。追加支援、仏製兵器の現地生産、対弾道ミサイル協力も協議しました。",
+      "sources": [
+        {
+          "name": "ウクライナ大統領府",
+          "url": "https://www.president.gov.ua/en/news/prezidenti-ukrayini-ta-franciyi-obgovorili-oboronnu-pidtrimk-106741",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-06T05:07:20+09:00"
+        },
+        {
+          "name": "The Kyiv Independent",
+          "url": "https://kyivindependent.com/ukrainian-pilots-to-soon-start-training-on-french-rafale-jets-zelensky-says/",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-06T05:07:20+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "ウクライナ大統領府と現地報道の本文を照合しました。公開日は10月5日ですが、表示時刻のタイムゾーンが確認できないため正確な日本時間は未確認です。訓練の開始日、参加人数、航空機の納入時期は未公表。写真は2025年の参考写真です。",
+      "image": {
+        "url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2509/9309279/1000w_q95.jpg",
+        "source_url": "https://www.dvidshub.net/image/9309279/rafales-and-falcons-uscentcom",
+        "alt": "参考写真：2025年8月20日、米中央軍の担当区域で米空軍F-16Cと編隊飛行するフランス航空宇宙軍のラファール3機。今回のウクライナ操縦士訓練の写真ではありません。",
+        "credit": "U.S. Air Force / Senior Airman Natalie Jones via DVIDS（2025年8月20日撮影）。米国防当局による本媒体の支持を意味しません。",
+        "license": "Public Domain（DVIDS表示）",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-06T05:07:52+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+        "license_url": "https://www.dvidshub.net/about/copyright",
+        "caption": "2025年8月20日、米中央軍の担当区域で米空軍F-16Cと編隊飛行するフランス航空宇宙軍のラファール3機。今回のウクライナ操縦士訓練の写真ではありません。"
+      }
+    },
+    {
+      "id": "2026-10-06-black-sea-royad-mammadov-sinking",
+      "topic_key": "black-sea-royad-mammadov-sinking-20261005",
+      "candidate_slug": "black-sea-royad-mammadov-sinking-20261005",
+      "headline": "黒海で商船が沈没、2人死亡・11人救助　ウクライナはロシア無人機の攻撃と主張",
+      "category": "戦争・紛争",
+      "published_date": "2026-10-05",
+      "published_at_jst": null,
+      "first_seen_at_jst": "2026-10-06T05:00:42+09:00",
+      "last_checked_at_jst": "2026-10-06T05:07:52+09:00",
+      "lead": "ルーマニア内務省は5日、黒海で火災が発生して沈没した商船から11人を救助し、2人の死亡を確認したと発表しました。ゼレンスキー大統領はロシアの無人機2機による攻撃だったと主張していますが、ルーマニア当局は火災の原因を公表していません。",
+      "body_paragraphs": [
+        "内務省によると、沿岸警備当局は現地5日午前11時ごろ、同国の排他的経済水域で商船に火災が発生したとの通報を受けました。場所はスフントゥ・ゲオルゲの南約30海里で、コンスタンツァの海上救難調整機関が捜索救助を開始。負傷者はヘリコプターでつり上げられ、救急医療につながれました。",
+        "報道された船名は「Royad Mammadov」です。ゼレンスキー氏は、船がトルコ所有でトウモロコシを運んでいたと説明しました。死者数と救助者数はルーマニア側の発表で確認できる一方、攻撃主体や火災に至った経緯は未確定です。原因調査と各国当局の説明を区別して追う必要があります。"
+      ],
+      "summary": "ルーマニア当局が商船の沈没と死者2人、救助11人を確認。ロシア無人機による攻撃との説明はウクライナ側の主張として扱います。",
+      "sources": [
+        {
+          "name": "ルーマニア内務省",
+          "url": "https://www.mai.gov.ro/structurile-ministerului-afacerilor-interne-misiune-complexa-pentru-salvarea-echipajului-unei-nave-care-s-a-scufundat-in-marea-neagra/",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-06T05:07:20+09:00"
+        },
+        {
+          "name": "The Kyiv Independent",
+          "url": "https://kyivindependent.com/russian-drones-strike-cargo-ship-in-black-sea-kill-captain-zelensky-says/",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-06T05:07:20+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "ルーマニア内務省の救助発表とThe Kyiv Independentの本文を照合しました。死者2人・救助11人は内務省発表で、11人全員の負傷を示すものではありません。ロシア無人機による攻撃という説明はウクライナ側の主張です。公開時刻の日本時間は未確認。写真は別の行事で撮影した参考写真です。",
+      "image": {
+        "url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2508/9260693/1000w_q95.jpg",
+        "source_url": "https://www.dvidshub.net/image/9260693/us-army-garrison-black-sea-commander-attends-romanian-navy-day",
+        "alt": "参考写真：2025年8月、ルーマニアのコンスタンツァで海軍記念日の実演に参加するIAR 330 Puma Navalヘリコプター。今回の救助活動や救助に使われた機体を示す写真ではありません。",
+        "credit": "U.S. Army / Spc. Breanna Bradford via DVIDS（2025年8月撮影）。米国防当局による本媒体の支持を意味しません。",
+        "license": "Public Domain（DVIDS表示）",
+        "is_reference": true,
+        "checked_at_jst": "2026-10-06T05:07:52+09:00",
+        "changes": "画像データは未加工。一覧では表示領域に合わせて切り抜き表示。The appearance of U.S. Department of War (DoW) visual information does not imply or constitute DoW endorsement.",
+        "license_url": "https://www.dvidshub.net/about/copyright",
+        "caption": "2025年8月、ルーマニアのコンスタンツァで海軍記念日の実演に参加するIAR 330 Puma Navalヘリコプター。今回の救助活動や救助に使われた機体を示す写真ではありません。"
+      }
+    },
+    {
+      "id": "2026-10-06-ukraine-automated-turrets-jet-drones",
+      "topic_key": "ukraine-automated-turrets-jet-drones-20261005",
+      "candidate_slug": "ukraine-automated-turrets-jet-drones-20261005",
+      "headline": "ウクライナ空軍、自動銃塔でジェット無人機を撃墜と説明　射程の短さも課題",
+      "category": "新技術・兵器開発",
+      "published_date": "2026-10-05",
+      "published_at_jst": null,
+      "first_seen_at_jst": "2026-10-06T05:03:41+09:00",
+      "last_checked_at_jst": "2026-10-06T05:07:52+09:00",
+      "lead": "ウクライナ空軍のユーリー・イフナト報道官は5日、画像認識を利用する自動銃塔で、ロシアのジェット推進無人機を初めて撃墜した事例があると明らかにしました。対象には「ゲラン5」が含まれるとしています。",
+      "body_paragraphs": [
+        "報道官はテレビ放送で、機械の画像認識やAIによる照準技術がジェット無人機への対処に使われていると説明しました。hromadskeとThe Kyiv Independentが発言を報じています。撃墜数や個別の交戦日時、独立した戦果検証の資料は今回の報道では示されていません。",
+        "一方、イフナト氏は、主な迎撃手段が機関銃であるため自動銃塔の対処範囲は限られるとも述べました。前日にはキーウに12基を設置したとの大統領説明が出ており、今回の新情報は配備そのものではなく、ジェット機型無人機への撃墜事例が報告された点です。"
+      ],
+      "summary": "空軍報道官が自動銃塔によるゲラン5などの撃墜を報告。射程には限界があり、戦果は同報道官の説明です。",
+      "sources": [
+        {
+          "name": "hromadske",
+          "url": "https://hromadske.ua/viyna/272019-u-povitrianykh-sylakh-zaiavyly-pro-zbyttia-rosiyskykh-reaktyvnykh-bpla-z-tureley",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-06T05:07:20+09:00"
+        },
+        {
+          "name": "The Kyiv Independent",
+          "url": "https://kyivindependent.com/new-automatic-gun-turrets-successfully-down-first-russian-jet-powered-drones-air-force-says/",
+          "published_at_jst": null,
+          "checked_at_jst": "2026-10-06T05:07:20+09:00"
+        }
+      ],
+      "confidence": "high",
+      "verification_notes": "2媒体が伝えた空軍報道官の発言に基づきます。撃墜数や個別の交戦日時、独立した戦果確認資料は未公表。4日の銃塔配備発表と、5日の撃墜事例の説明を区別しました。公開時刻の日本時間は未確認。安全に再利用できる関連写真を確認できず、写真なしで掲載します。",
+      "image": null
     }
   ]
 }
