@@ -1,45 +1,29 @@
 {
   "schema_version": 1,
-  "revision": 13,
+  "revision": 14,
   "last_attempt": {
-    "run_id": "scheduled-20261005-1700-publication-01",
+    "run_id": "scheduled-20261006-0500-publication-01",
     "trigger": "scheduled",
-    "issue_date": "2026-10-05",
-    "edition": "evening",
-    "label": "夕刊",
-    "target_slot": "2026-10-05T17:00:00+09:00",
-    "trigger_observed_at": "2026-10-05T17:08:17+09:00",
-    "candidate_count": 5,
-    "new_count": 5,
-    "article_count": 11,
-    "new_badges": 5,
-    "result": "OK",
+    "issue_date": "2026-10-06",
+    "edition": "morning",
+    "label": "朝刊",
+    "target_slot": "2026-10-06T05:00:00+09:00",
+    "trigger_observed_at": "2026-10-06T04:59:05+09:00",
+    "candidate_count": 6,
+    "new_count": 6,
+    "article_count": 6,
+    "new_badges": 0,
+    "result": "PENDING_VERIFICATION",
     "failed_stage": null,
-    "started_at": "2026-10-05T18:04:17+09:00",
-    "finished_at": "2026-10-05T18:11:42+09:00",
-    "collector_run_id": "scheduled-20261005-1700-collector-01",
-    "collector_finished_at": "2026-10-05T17:22:04+09:00",
+    "started_at": "2026-10-06T05:09:40+09:00",
+    "finished_at": null,
+    "collector_run_id": "scheduled-20261006-0500-collector-01",
+    "collector_finished_at": "2026-10-06T05:08:22+09:00",
     "collection_status": "OK",
+    "collector_commit_sha": "55473607151d5adf0477425805666b942ac71b74",
     "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
     "scheduled_trigger_verified": true,
-    "error": null,
-    "collector_commit_sha": "9221110d3e8a4834604f7a45a680bd9d2c6596e8",
-    "recovered_errors": [
-      {
-        "code": "COLLECTOR_SAVE_DENIED",
-        "stage": "collection_commit",
-        "message": "Collector-only master save was initially denied. After specific user approval, guarded Contents API update succeeded and exact-commit readback matched."
-      }
-    ],
-    "publication_commit_sha": "81090f13ee934eef6c32a56ce5eb8002083de254",
-    "pull_request_url": "https://github.com/klran03/snowflake0s.github.io/pull/7",
-    "git_readback_verified": true,
-    "pages_verified": true,
-    "public_http_verified": true,
-    "published_at": "2026-10-05T09:08:23Z",
-    "pages_completed_at": "2026-10-05T09:09:06Z",
-    "verification_started_at": "2026-10-05T18:08:40+09:00",
-    "verification_finished_at": "2026-10-05T18:11:42+09:00"
+    "error": null
   },
   "latest_verified": {
     "issue_date": "2026-10-05",
@@ -251,6 +235,36 @@
       "id": "2026-10-05-ukraine-war-financing-gap",
       "issue_date": "2026-10-05",
       "article_path": "military-news/articles/2026-10-05/ukraine-war-financing-gap-20261005.html"
+    },
+    {
+      "id": "2026-10-06-india-uae-mountain-guardian-2026-begins",
+      "issue_date": "2026-10-06",
+      "article_path": "military-news/articles/2026-10-06/india-uae-mountain-guardian-2026-begins-20261005.html"
+    },
+    {
+      "id": "2026-10-06-seventh-air-force-iron-sentry-counter-uas-rfi",
+      "issue_date": "2026-10-06",
+      "article_path": "military-news/articles/2026-10-06/seventh-air-force-iron-sentry-counter-uas-rfi-20261005.html"
+    },
+    {
+      "id": "2026-10-06-india-fleet-support-ship-first-launch-announcement",
+      "issue_date": "2026-10-06",
+      "article_path": "military-news/articles/2026-10-06/india-fleet-support-ship-first-launch-announcement-20261005.html"
+    },
+    {
+      "id": "2026-10-06-ukraine-france-rafale-training",
+      "issue_date": "2026-10-06",
+      "article_path": "military-news/articles/2026-10-06/ukraine-france-rafale-training-20261005.html"
+    },
+    {
+      "id": "2026-10-06-black-sea-royad-mammadov-sinking",
+      "issue_date": "2026-10-06",
+      "article_path": "military-news/articles/2026-10-06/black-sea-royad-mammadov-sinking-20261005.html"
+    },
+    {
+      "id": "2026-10-06-ukraine-automated-turrets-jet-drones",
+      "issue_date": "2026-10-06",
+      "article_path": "military-news/articles/2026-10-06/ukraine-automated-turrets-jet-drones-20261005.html"
     }
   ],
   "history": [
@@ -477,6 +491,30 @@
       "pages_completed_at": "2026-10-05T09:09:06Z",
       "verification_started_at": "2026-10-05T18:08:40+09:00",
       "verification_finished_at": "2026-10-05T18:11:42+09:00"
+    },
+    {
+      "run_id": "scheduled-20261006-0500-publication-01",
+      "trigger": "scheduled",
+      "issue_date": "2026-10-06",
+      "edition": "morning",
+      "label": "朝刊",
+      "target_slot": "2026-10-06T05:00:00+09:00",
+      "trigger_observed_at": "2026-10-06T04:59:05+09:00",
+      "candidate_count": 6,
+      "new_count": 6,
+      "article_count": 6,
+      "new_badges": 0,
+      "result": "PENDING_VERIFICATION",
+      "failed_stage": null,
+      "started_at": "2026-10-06T05:09:40+09:00",
+      "finished_at": null,
+      "collector_run_id": "scheduled-20261006-0500-collector-01",
+      "collector_finished_at": "2026-10-06T05:08:22+09:00",
+      "collection_status": "OK",
+      "collector_commit_sha": "55473607151d5adf0477425805666b942ac71b74",
+      "publication_method": "Contents API on temporary branch, fixed-head readback, verified squash merge",
+      "scheduled_trigger_verified": true,
+      "error": null
     }
   ]
 }
